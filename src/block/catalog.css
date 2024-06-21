@@ -1,0 +1,51 @@
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card__list li {
+    /* width: 48%; */
+    margin-bottom: 10px;
+  }
+
+.popular-items-section .swiper-slide,
+.popular-items-section .swiper-slide p,
+.popular-items-section .swiper-slide button,
+.popular-items-section .swiper-slide ul li,
+.popular-items-section .swiper-slide ul,
+.popular-items-section .swiper-slide svg,
+.popular-items-section .swiper-slide svg circle,  
+.popular-items-section .swiper-slide svg path  {
+    transition: all 0.9s ease-in-out;
+}
+
+.popular-items-section .swiper-slide button {
+    font-weight: 600;
+}
+.popular-items-section .swiper-slide:hover {
+    background-color: var(--blue);
+}
+.popular-items-section .swiper-slide:hover p, .popular-items-section .swiper-slide:hover ul li {
+    color: var(--white);
+}
+
+.popular-items-section .swiper-slide:hover button {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.popular-items-section .swiper-slide:hover svg circle{
+    stroke: var(--white);
+}
+
+.popular-items-section .swiper-slide:hover svg path{
+    fill: var(--white);
+}
+
+@media screen and (max-width:330px) {
+    .filter-swiper .tabs-container__btns ~ div div > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

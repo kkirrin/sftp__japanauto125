@@ -1,0 +1,208 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/button.css';
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/scrool-top.css';
+@import './block/popup.css';
+@import './block/animateSocialsBtn.css';
+@import './block/clip_box.css';
+@import './block/main.css';
+@import './block/tabs.css';
+@import './block/catalog.css';
+@import './block/service.css';
+@import './block/auc.css';
+@import './block/work_with_us.css';
+@import './block/socials.css';
+@import './block/map.css';
+@import '/block/news';
+@import './block/card__slider.css';
+@import './block/test.css';
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+
+:root {
+    --black: #31373F;
+    --white: #fff;
+    --blue: #467dd0;
+    --dark-blue: #275DAD;
+    --light-gray: #f0f3f9;
+    --gray: #9ba5b4;
+
+    /* Длительность анимаций (указывать в секундах) */
+    --duration-add-animate-class: 2;
+    /* Должно быть столько же, сколько в переменной animate_time в файле js/module/add_class_for_animation.js */
+    --duration-hover: 0.5;
+}
+
+
+
+@font-face {
+    font-family: 'Involve';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../src/fonts/Involve-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Involve';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../src/fonts/Involve-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Involve';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../src/fonts/Involve-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Involve';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../src/fonts/Involve-Bold.woff2') format('woff2');
+}
+
+
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: var(--blue) var(--light-gray);
+    }
+
+    body {
+        font-family: 'Involve', sans-serif;
+        color: var(--black);
+        background: var(--white);
+        font-weight: 400;
+        overflow: auto;
+    }
+
+    h2 {
+        color: var(--white);
+        font-family: 'Involve';
+        line-height: clamp(1.75rem, -0.482rem + 5.952vw, 4.875rem);
+        font-size: clamp(1.375rem, -0.321rem + 4.524vw, 3.75rem);
+        font-weight: 700;
+        }
+        
+    h3 {
+        font-family: 'Involve';
+        font-weight: 700;
+        font-size: clamp(1.5rem, 1.232rem + 0.714vw, 1.875rem);
+        line-height: clamp(1.75rem, -0.482rem + 5.952vw, 4.875rem)
+    }
+
+    span.counter-items,
+    span.counter-client,
+    span.counter-years {
+        font-family: 'Involve';
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px]
+    }
+}
+
+/* Директивы классов */
+
+
+a {
+    text-decoration:none;
+  }
+
+
+/* Прочие классы */
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.important {
+    background-image: url('../src/img/pattern-3.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+@media (max-width: 767px) {
+    .important {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero-bg img {
+        display: none;
+    }
+}
+
+.header-fix {
+    /* background: rgba(20, 19, 19, 0.8); */
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    padding-bottom: 10px; */
+}
+
+.title {
+    line-height: 85px !important;
+}
+
+
+.swiper-pagination {
+    --swiper-pagination-color: red;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-margin: 5px;
+    display: flex !important;
+    width: 10px !important;
+    height: 10px !important;
+    z-index: 1000;
+    position: absolute;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: red;
+  }
+  
+
+[data-scroll] {
+    transition: opacity 1s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+}

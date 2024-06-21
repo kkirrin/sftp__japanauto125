@@ -1,0 +1,108 @@
+#service .service__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.service__wrapper {
+    padding-top: 20px;
+}
+
+
+.service__wrapper div {
+    max-height: 500px;
+/* min-width:350px; */
+    max-width: 350px;
+    /* min-height:350px; */
+}
+
+.service__wrapper .service__card {
+
+    background-color: transparent;
+    transition: background-color 0.9s ease-in-out, border-radius 0.5s ease-in-out;
+    border: .1px solid var(--light-gray) !important;
+}
+
+.service__wrapper .service__card:hover {
+    background-color: var(--blue);
+}
+
+.service__wrapper .service__img {
+    max-width: 124px;
+    max-height: 124px;
+    background-color: var(--light-gray);
+    border-radius: 20px;
+    transition: background-color 0.9s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+
+
+.service__wrapper div:hover .service__img {
+    background-color: var(--dark-blue);
+}
+
+.service__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+    transition: color 0.9s ease-in-out;
+
+}
+
+.service__text {
+    font-size: 14px;
+    color: var(--gray);
+    transition: color 0.9s ease-in-out;
+
+}
+
+.service__wrapper .service__card:hover .service__title, 
+.service__wrapper .service__card:hover .service__text {
+    color: var(--white);
+}
+
+
+.service__wrapper .service__card svg rect{
+    transition: stroke 0.9s ease-in-out;
+}
+
+.service__wrapper .service__card svg path{
+    transition: fill 0.9s ease-in-out;
+}
+
+.service__wrapper .service__card:hover svg rect{
+    stroke: var(--white);
+}
+
+.service__wrapper .service__card:hover svg path{
+    fill: var(--white);
+}
+@media screen and (max-width: 769px) {
+    #service .service__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 426px) {
+    #service .service__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    #service .service__wrapper > first-child {
+       margin-top: 20px;
+    }
+    .service__wrapper div {
+        width: -webkit-fill-available !important;
+        max-width: -webkit-fill-available !important;
+    }
+    #service .service__wrapper {
+        padding-top: 40px;
+    }
+    
+}

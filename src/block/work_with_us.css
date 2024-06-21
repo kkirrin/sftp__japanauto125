@@ -1,0 +1,163 @@
+#works_with_us .point {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+}
+
+
+#works_with_us .point .date {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #b5c2d7;
+    border-radius: 40px;
+    padding: 10px 22px 10px;
+    transition-property: background-color;
+    transition-delay: calc(var(--duration-add-animate-class) / 2 * 1s);
+    transition-duration: calc(var(--duration-hover) * 1s);
+}
+
+#works_with_us .point:first-child .date {
+    transition-delay: 0s;
+}
+
+#works_with_us .point.animate .date {
+    background-color: var(--blue);
+}
+
+#works_with_us .point .mark {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#works_with_us .point .line {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    display: block;
+    width: 6px;
+    height: 100%;
+    background-color: #ecf3f7;
+    transform: translate(-50%, 0%);
+}
+
+#works_with_us .point .line::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0%;
+    background-color: var(--blue);
+    transition-property: height;
+    transition-duration: calc(var(--duration-add-animate-class) * 1s);
+    transition-timing-function: linear;
+}
+
+#works_with_us .point:first-child .line::before,
+#works_with_us .point:last-child .line::before {
+    transition-duration: calc(var(--duration-add-animate-class) / 2 * 1s);
+}
+
+#works_with_us .point.animate .line::before {
+    height: 100%;
+}
+
+#works_with_us .point:first-child .line {
+    height: 50%;
+    top: 50%;
+}
+
+#works_with_us .point:last-child .line {
+    height: 50%;
+}
+
+#works_with_us .point .mark_point {
+    position: relative;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background-color: #b5c2d7;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-delay: calc(var(--duration-add-animate-class) / 2 * 1s);
+    transition-duration: calc(var(--duration-hover) * 1s);
+}
+
+#works_with_us .point:first-child .mark_point {
+    transition-delay: 0s;
+}
+
+#works_with_us .point.animate .mark_point {
+    background-color: var(--blue);
+}
+
+#works_with_us .point .mark_point::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#works_with_us .point .text {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #292e35;
+    padding: 30px 50px 30px;
+    border: 1px solid #e3e9f3;
+    border-radius: 20px;
+}
+
+#works_with_us .point:not(:last-child) .text {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px)
+{
+    #works_with_us .point {
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px 30px;
+    }
+
+    #works_with_us .point .date {
+        order: 2;
+        width: max-content;
+        font-size: 20px;
+        line-height: 27px;
+        padding: 7px 22px 7px;
+    }
+
+    #works_with_us .point .mark {
+        grid-row: span 2;
+        order: 1;
+    }
+
+    #works_with_us .point .text {
+        order: 3;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 20px;
+    }
+
+    #works_with_us .point:not(:last-child) .text {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+
+}
