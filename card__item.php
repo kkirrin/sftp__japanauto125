@@ -23,8 +23,16 @@
                             <li class="opacity-60 text-bg-black">
                                 -
                             </li>
+                            <li class="breadcrumb__item text-bg-black opacity-60 ">
+                                <a href="https://japanauto125.ru/?page_id=8" class="font-medium">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="opacity-60 text-bg-black">
+                                -
+                            </li>
                             <li class="breadcrumb__item">
-                                <span class="font-bold text-bg-black">Название машины</span>
+                                <span class="font-bold text-bg-black"> <?php the_field('marka'); ?> <?php the_field('model'); ?></span>
                             </li>
                         </ul>
                     </div>
@@ -35,17 +43,13 @@
             <section class="pt-12 md:pt-14">
                 <div class="container">
                     <h2 class="text-start text-4xl lg:text-5xl font-extrabold relative pb-5 text-black">
-                        <!-- <?php the_field('marka_name'); ?> <?php the_field('model_name'); ?> -->
-                           
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                Kia K5
-                        
+                         <?php the_field('marka'); ?> <?php the_field('model'); ?>
+                             
                     </h2>
                       
                     <div class="md:hidden justify-start items-center gap-4 pb-7 flex">
                         <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl bg-blue text-white">
-                            <!-- <?php the_field('price'); ?>₽ -->
-                            В наличии
+                            <?php the_field('status'); ?>
                         </p>
                 </div>
 
@@ -58,58 +62,39 @@
                                         <div class="swiper slider__slider">
                                             <div class="swiper-wrapper gallery-wrapper">
                                                
-                                            <!-- <?php
-                                                $photos = get_field('галерея');
+                                            <?php
+                                                $photos = get_field('gallery_auto');
                                                 if ($photos) {
                                                     foreach ($photos as $photo) {
-                                                        echo '<div class="swiper-slide">';
-                                                        echo '<img class="img_car md:w-[650px] md:h-[500px] w-[335px] h-[290px]" src="' . esc_url($photo['url']) . '" alt="">';
-                                                        echo '</div>';
+                                                       echo '<div class="swiper-slide">'; 
+                                                       echo '<a href="' . esc_url($photo['url']) . '">';
+                                                        echo    '<img class="img_car md:w-[600px] md:h-[500px] w-[335px] h-[290px] object-cover" src="' . esc_url($photo['url']) . '" alt="" data-caption="Image caption">';
+                                                        echo '</a>';
+                                                    echo    '</div>';
                                                     }
                                                 } else {
                                                     echo 'No photos found.'; 
                                                 }
-                                            ?> -->
-                                                <div class="swiper-slide">
-                                                    <a href="<?php echo get_template_directory_uri() . '/src/img/main/car_card.webp'; ?>">
-                                                        <img class="img_car md:w-[600px] md:h-[500px] w-[335px] h-[290px] object-cover" src="<?php echo get_template_directory_uri() . '/src/img/main/car_card.webp'; ?>" alt="" data-caption="Image caption">
-                                                    </a>
-                                                </div>
+                                            ?>
+
                                             </div>
                                        
                                         </div>
         
                                         <div class="swiper slider__thumb md:w-full w-80 md:relative absolute">
                                             <div class="swiper-wrapper">
-                                            <!-- <?php
-                                                $photos = get_field('галерея');
+                                            <?php
+                                                $photos = get_field('gallery_auto');
                                                 if ($photos) {
                                                     foreach ($photos as $photo) {
                                                         echo '<div class="swiper-slide">';
-                                                        echo '<img class="img_car md:w-24 md:h-24 w-[60px] h-[60px]" src="' . esc_url($photo['url']) . '" alt="">';
+                                                        echo '<img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="' . esc_url($photo['url']) . '" alt="">';
                                                         echo '</div>';
                                                     }
                                                 } else {
                                                     echo 'No photos found.'; 
                                                 }
-                                            ?> -->
-                                           
-                                            <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="<?php echo get_template_directory_uri() . '/src/img/main/car_card_t_1.png'; ?>" alt="" data-caption="Image caption">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="<?php echo get_template_directory_uri() . '/src/img/main/car_card_t_2.png'; ?>" alt="" data-caption="Image caption">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="<?php echo get_template_directory_uri() . '/src/img/main/car_card_t_3.png'; ?>" alt="" data-caption="Image caption">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="<?php echo get_template_directory_uri() . '/src/img/main/car_card_t_1.png'; ?>" alt="" data-caption="Image caption">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img class="img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="<?php echo get_template_directory_uri() . '/src/img/main/car_card_t_2.png'; ?>" alt="" data-caption="Image caption">
-                                            </div>
-                                              
+                                            ?>         
                                             </div>
                                         </div>
                                 </div>
@@ -122,11 +107,13 @@
                                     <li class="md:text-base text-xs text-gray pb-5">
                                     <div class="md:flex justify-start items-center gap-4 pb-7 hidden">
                                         <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl bg-blue text-white">
-                                            <!-- <?php the_field('price'); ?>₽ -->
-                                            В наличии
+                                            <?php the_field('status'); ?>
                                         </p>
                                     </div>
                                         Бренд
+                                    </li>
+                                    <li class="md:text-base text-xs text-gray pb-5">
+                                        Модель
                                     </li>
                                     <li class="md:text-base text-xs text-gray pb-5">
                                         Год выпуска
@@ -149,32 +136,27 @@
                                 </ul>
                                 <ul>
                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
-                                        <!-- <?php the_field('marka_name'); ?> -->
-                                        Kia
+                                        <?php the_field('marka'); ?>
                                     </li>
                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
-                                        <!-- <?php the_field('model_name'); ?> -->
-                                        2014
+                                        <?php the_field('model'); ?>
+                                    
                                     </li>
                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
-                                        <!-- <?php the_field('year'); ?> -->
-                                        Седан
+                                        <?php the_field('year'); ?>
+                                        
                                     </li>
                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
-                                        <!-- <?php the_field('тип_кузова'); ?> -->
-                                        Бензин
+                                        <?php the_field('kuzov'); ?>
                                     </li>
                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
-                                        <!-- <?php the_field('тип_двигателя'); ?> -->
-                                        2.0 л
+                                        <?php the_field('engine_v'); ?>
                                     </li>
                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
-                                        <!-- <?php the_field('value'); ?> л -->
-                                       Передний
+                                        <?php the_field('privod'); ?> 
                                     </li>
                                      <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
-                                        <!-- <?php the_field('fuel'); ?> -->
-                                        121 000 км
+                                        <?php the_field('milleage'); ?>
                                     </li>
                                 </ul>
                                

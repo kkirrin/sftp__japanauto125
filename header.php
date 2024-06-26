@@ -7,11 +7,6 @@
     <meta name="description"
         content="Подберем автомобиль по вашему бюджету на аукционах Японии и доставим в любую точку России. Купите автомобиль мечты и сэкономьте до 50% по сравнению со вторичным рынком">
     <title>JapanAuto125</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/baguetteBox.min.css">
-    <link rel=" stylesheet" href="css/main.css">
 
     <?php wp_head(); ?>
 </head>
@@ -41,16 +36,19 @@
                         <div class="menu overflow-hidden ">
                             <ul class="flex flex-col text-white">
                                 <li class="px-4 mb-4"><a
-                                        href="https://japanauto125.ru/catalog">Все автомобили</a>
+                                        href="https://japanauto125.ru/?page_id=8">Все автомобили</a>
                                 </li>
-                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/catalog/?country=japan">Автомобили из Японии</a></li>
-                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/catalog/?country=korea">Автомобили из Кореи</a></li>
-                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/catalog/?country=china">Автомобили из Китая</a></li>
-                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/news">Новости</a></li>
-                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/contract">Образец договора</a></li>
-                                <li class="px-4 mb-4"><p>г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
+                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=8?country=japan">Автомобили из Японии</a></li>
+                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=8/?country=korea">Автомобили из Кореи</a></li>
+                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=8/?country=china">Автомобили из Китая</a></li>
+                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=10">Новости</a></li>
+                                <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
+
+                                <li class="px-4 mb-4">г. Уссурийск, Тургенева 1-й переулок, 5</li>
+                               
                             </ul>
                         </div>
+
 
                         <!-- Мобильная кнопка -->
                          <div class="clip_box top left pt-[18px]">
@@ -76,22 +74,22 @@
                                     <ul class="text-gray md:text-base text-xs">
 
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/catalog/">Все автомобили</a>
+                                            <a href="https://japanauto125.ru/?page_id=8">Все автомобили</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/catalog/?country=japan">Автомобили из Японии</a>
+                                            <a href="https://japanauto125.ru/?page_id=8?country=japan">Автомобили из Японии</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/catalog/?country=korea">Автомобили из Кореи</a>
+                                            <a href="https://japanauto125.ru/?page_id=8/?country=korea">Автомобили из Кореи</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/catalog/?country=china">Автомобили из Китая</a>
+                                            <a href="https://japanauto125.ru/?page_id=8/?country=china">Автомобили из Китая</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/news">Новости</a>
+                                            <a href="https://japanauto125.ru/?page_id=10">Новости</a>
                                         </li>   
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/contract">Образец договора</a>
+                                            <a href="https://japanauto125.ru/?page_id=63">Образец договора</a>
                                         </li>  
                                         <a href="tel:+79247388555" class="text-black font-bold text-base pb-8">+7 (924) 738‒85‒55</a>
                                         <li class="pb-8 font-bold text-black text-base"><p>г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
@@ -107,8 +105,8 @@
                                     <img class="m-auto md:w-52 w-44" width="204" src="<?php echo get_template_directory_uri() .'/src/img/logo.svg'; ?>" >
                                 </a>
                             </li>
-                            <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/catalog">Каталог</a></li>
-                            <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/contract">Образец договора</a></li>
+                            <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/?page_id=8">Каталог</a></li>
+                            <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
                             <li class="mr-1"><address class="text-white decoration-transparent">г. Уссурийск, Тургенева 1-й переулок, 5</address></li>
                             <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="tel:+79247388555">+7 (924) 738-85-55</a></li>
                         </ul>

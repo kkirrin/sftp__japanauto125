@@ -36,38 +36,12 @@
                     <h2 class="text-black pb-12">Каталог автомобилей </h2>
                     
 
-
-                    <?php
-                       $country = isset($_GET['country']) ? $_GET['country'] : '';
-
-                       if ($country == 'japan') {
-                           echo '<div class="tabs-container__btns">
-                               <a href="https://japanauto125.ru/catalog/?country=japan" class="_tabs-item__link md:text-lg text-xs _active font-semibold">Автомобили из Японии</a>
-                               <a href="https://japanauto125.ru/catalog/?country=korea" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Кореи</a>
-                               <a href="https://japanauto125.ru/catalog/?country=china" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Китая</a>
-                           </div>';
-                       } elseif ($country == 'korea') {
-                           echo '<div class="tabs-container__btns">
-                               <a href="https://japanauto125.ru/catalog/?country=japan" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Японии</a>
-                               <a href="https://japanauto125.ru/catalog/?country=korea" class="_tabs-item__link md:text-lg text-xs _active font-semibold">Автомобили из Кореи</a>
-                               <a href="https://japanauto125.ru/catalog/?country=china" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Китая</a>
-                           </div>';
-                       } elseif ($country == 'china') {
-                           echo '<div class="tabs-container__btns">
-                               <a href="https://japanauto125.ru/catalog/?country=japan" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Японии</a>
-                               <a href="https://japanauto125.ru/catalog/?country=korea" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Кореи</a>
-                               <a href="https://japanauto125.ru/catalog/?country=china" class="_tabs-item__link md:text-lg text-xs _active font-semibold">Автомобили из Китая</a>
-                           </div>';
-                       } else {
-                           echo '<div class="tabs-container__btns">
-                               <a href="https://japanauto125.ru/catalog/?country=japan" class="_tabs-item__link md:text-lg text-xs _active font-semibold">Автомобили из Японии</a>
-                               <a href="https://japanauto125.ru/catalog/?country=korea" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Кореи</a>
-                               <a href="https://japanauto125.ru/catalog/?country=china" class="_tabs-item__link md:text-lg text-xs font-semibold">Автомобили из Китая</a>
-                           </div>';
-                       }
-                        
-                    ?>
-                   
+                    <div class="tabs-container__btns">
+                        <button name="filter-name" id="2" class="filter_country md:text-lg text-xs _active">Автомобили из Японии</button>
+                        <button name="filter-name" id="3" class="filter_country md:text-lg text-xs">Автомобили из Кореи</button>
+                        <button name="filter-name" id="4" class="filter_country md:text-lg text-xs">Автомобили из Китая</button>
+                    </div>
+        
     
                     <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl">
                         <div class=" pt-8 flex items-center justify-between flex-wrap gap-5">
@@ -75,20 +49,20 @@
                                 Подберите  автомобиль 
                             </h3>
 
-                            <div class="flex gap-5">
+                            <div class="flex gap-5 checkbox__container">
                                 <div class="flex flex-row gap-2">
-                                    <input type="checkbox" id="customCheckbox" class="hidden-checkbox">
-                                    <label for="customCheckbox" class="customCheckboxLabel"></label>
+                                    <input name="filter_checkbox" type="radio" id="customCheckbox_1" class="hidden-checkbox" value="В наличии">
+                                    <label for="customCheckbox_1" class="customCheckboxLabel"></label>
                                     <label class="font-medium">В наличии</label>
                                 </div>
                                 <div class="flex flex-row gap-2">
-                                    <input type="checkbox" id="customCheckbox" class="hidden-checkbox">
-                                    <label for="customCheckbox" class="customCheckboxLabel"></label>
+                                    <input name="filter_checkbox" type="radio" id="customCheckbox_2" class="hidden-checkbox" value="В пути">
+                                    <label for="customCheckbox_2" class="customCheckboxLabel"></label>
                                     <label class="font-medium">В пути</label>
                                 </div>
                                 <div class="flex flex-row gap-2">
-                                    <input type="checkbox" id="customCheckbox" class="hidden-checkbox">
-                                    <label for="customCheckbox" class="customCheckboxLabel"></label>
+                                    <input name="filter_checkbox" type="radio" id="customCheckbox_3" class="hidden-checkbox" value="Под заказ">
+                                    <label for="customCheckbox_3" class="customCheckboxLabel"></label>
                                     <label class="font-medium">Под заказ</label>
                                 </div>
                             </div>
@@ -101,68 +75,32 @@
                                     <label class="block text-black text-sm mb-2 font-semibold" for="make">
                                         Марка
                                     </label>
-                                    <select name="brand" id="brand" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
+                                    <select name="marka" id="marka" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
                                         <option class="text-opacity-10">Выберите марку</option>
-                                        <option class="text-opacity-10"></option>
                                     </select>
                                 </div>
                                 <div class="mb-4">
                                     <label class="block text-black text-sm mb-2 font-semibold" for="make">
                                         Модель
                                     </label>
-                                    <select id="model" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
+                                    <select id="model" name="model" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
                                         <option class="text-opacity-10">Выберите модель</option>
-                                        <option class="text-opacity-10"></option>
-                                    </select>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="block text-black text-sm mb-2 font-semibold" for="make">
-                                        Поколение
-                                    </label>
-                                    <select id="fuel" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
-                                        <option class="text-gray">Бензин</option>
-                                        <option class="text-gray">Дизель</option>
-                                        <option class="text-gray">Газ</option>
-                                        <option class="text-gray">Электричество</option>
-                                        <option class="text-gray">Гибрид</option>
-
                                     </select>
                                 </div>
                                 <div class="mb-4">
                                     <label class="block text-black text-sm mb-2 font-semibold" for="make">
                                         Топливо
                                     </label>
-                                    <select id="drive" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
-                                        <option>Привод</option>
-                                        <option>4WD</option>
-                                        <option>Задний</option>
-                                        <option>Передний</option>
+                                    <select id="fuel" name="fuel" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
+                                        <option class="text-opacity-10">Выберите топливо</option>
                                     </select>
                                 </div>
                                 <div class="mb-4">
                                     <label class="block text-black text-sm mb-2 font-semibold " for="make">
                                         КПП
                                     </label>
-                                    <select id="transmition" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
-                                        <option>Трансмиссия</option>
-                                        <option>АКПП</option>
-                                        <option>Робот</option>
-                                        <option>Вариантор</option>
-                                        <option>Механика</option>
-
-                                    </select>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="block text-black text-sm mb-2 font-semibold" for="make">
-                                        Привод
-                                    </label>
-                                    <select id="transmition" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
-                                        <option>Трансмиссия</option>
-                                        <option>АКПП</option>
-                                        <option>Робот</option>
-                                        <option>Вариантор</option>
-                                        <option>Механика</option>
-
+                                    <select id="privod" name="privod" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
+                                        <option class="text-opacity-10">Выберите трансмиссию</option>
                                     </select>
                                 </div>
 
@@ -171,12 +109,7 @@
                                         Тип кузова
                                     </label>
                                     <select id="transmition" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
-                                        <option>Трансмиссия</option>
-                                        <option>АКПП</option>
-                                        <option>Робот</option>
-                                        <option>Вариантор</option>
-                                        <option>Механика</option>
-
+                                        <option class="text-opacity-10">Выберите</option>                
                                     </select>
                                 </div>
 
@@ -430,9 +363,9 @@
                                 
                                 
                                 <div class="flex items-center justify-end pt-2 ">
-                                    <a class="up bg-blue rounded-[15px] text-white button py-3 px-5 capitalize w-[287px] text-center" href="#popup3">
+                                    <button id="send_form" class="up bg-blue rounded-[15px] text-white button py-3 px-5 capitalize w-[287px] text-center">
                                         Показать
-                                    </a>
+                                    </button>
                                     <button class=" text-yellow py-2 px-10 underline text-gray" type="reset">
                                         Сбросить
                                     </button>
@@ -441,71 +374,8 @@
                         </div>         
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4  overflow-hidden pt-12 md:pt-32 gap-10">
-                        <div class=" rounded-xl relative bg-light-gray">
-                            <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">В наличии</span></p>
-                            <a href="#">
-                                    <img class="clip" src="<?php echo get_template_directory_uri() . '/src/img/main/car.webp'; ?>" alt="car">
-                            </a> 
-                                <div class="p-5">
-                                    <p class="font-bold text-black py-4"> Kia K5</p>
-                                    <div class="card__list">
-                                        <ul>
-                                            <li class="pb-2">Год выпуска</li>
-                                            <li class="pb-2">Пробег</li>
-                                            <li class="pb-2">Двигатель</li>
-                                        </ul>
-                                        <ul>
-                                            <li class="pb-2 font-semibold">2014</li>
-                                            <li class="pb-2 font-semibold">128 379 км</li>
-                                            <li class="pb-2 font-semibold">ГБО, 1 999 см^3</li>
-                                        </ul>
-                                    </div>
-                                    <p class="py-2">*Точную стоимость авто уточняйте у менеджера</p>
+                    <div id="catalog_page" class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4  overflow-hidden pt-12 md:pt-32 gap-10">
                         
-                                    <div class="flex gap-2 justify-between items-center">
-                                        <a href="#popup2" class="bg-blue text-white py-2 px-16 rounded-lg popup-link hover:bg-dark-blue transition-all">
-                                            Заказать
-                                        </a>
-                                        <svg class="next new__items__next" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="25" cy="25" r="24" stroke="#467dd0" stroke-width="2"/>
-                                            <path d="M16 24H15V26H16V24ZM34.7071 25.7071C35.0976 25.3166 35.0976 24.6834 34.7071 24.2929L28.3431 17.9289C27.9526 17.5384 27.3195 17.5384 26.9289 17.9289C26.5384 18.3195 26.5384 18.9526 26.9289 19.3431L32.5858 25L26.9289 30.6569C26.5384 31.0474 26.5384 31.6805 26.9289 32.0711C27.3195 32.4616 27.9526 32.4616 28.3431 32.0711L34.7071 25.7071ZM16 26L34 26V24L16 24V26Z" fill="#467dd0"/>
-                                        </svg>
-                                    </div>                             
-                                </div>
-                        </div>                    
-                        <div class=" rounded-xl relative bg-light-gray">
-                            <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">В наличии</span></p>
-                            <a href="#">
-                                    <img class="clip" src="<?php echo get_template_directory_uri() . '/src/img/main/car.webp'; ?>" alt="car">
-                            </a> 
-                                <div class="p-5">
-                                    <p class="font-bold text-black py-4"> Kia K5</p>
-                                    <div class="card__list">
-                                        <ul>
-                                            <li class="pb-2">Год выпуска</li>
-                                            <li class="pb-2">Пробег</li>
-                                            <li class="pb-2">Двигатель</li>
-                                        </ul>
-                                        <ul>
-                                            <li class="pb-2 font-semibold">2014</li>
-                                            <li class="pb-2 font-semibold">128 379 км</li>
-                                            <li class="pb-2 font-semibold">ГБО, 1 999 см^3</li>
-                                        </ul>
-                                    </div>
-                                    <p class="py-2">*Точную стоимость авто уточняйте у менеджера</p>
-                        
-                                    <div class="flex gap-2 justify-between items-center">
-                                        <a href="#popup2" class="bg-blue text-white py-2 px-16 rounded-lg popup-link hover:bg-dark-blue transition-all">
-                                            Заказать
-                                        </a>
-                                        <svg class="next new__items__next" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="25" cy="25" r="24" stroke="#467dd0" stroke-width="2"/>
-                                            <path d="M16 24H15V26H16V24ZM34.7071 25.7071C35.0976 25.3166 35.0976 24.6834 34.7071 24.2929L28.3431 17.9289C27.9526 17.5384 27.3195 17.5384 26.9289 17.9289C26.5384 18.3195 26.5384 18.9526 26.9289 19.3431L32.5858 25L26.9289 30.6569C26.5384 31.0474 26.5384 31.6805 26.9289 32.0711C27.3195 32.4616 27.9526 32.4616 28.3431 32.0711L34.7071 25.7071ZM16 26L34 26V24L16 24V26Z" fill="#467dd0"/>
-                                        </svg>
-                                    </div>                             
-                                </div>
-                        </div>                                  
                     </div>                      
     
                         

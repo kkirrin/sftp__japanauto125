@@ -220,13 +220,11 @@
         </section>
 
     </div>
-
     <script src="<?php echo get_template_directory_uri() . '/js/wow.js'; ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/js/baguettebox.js'; ?>"></script>
-    <script src="<?php echo get_template_directory_uri() . '/js/aimpleparallax.js'; ?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/js/simpleParallax.js'; ?>"></script>
     <script src="<?php echo get_template_directory_uri() . '/js/swiper-bundle.min.js'; ?>"></script>
     <script type="module" src="<?php echo get_template_directory_uri() . '/js/main.js'; ?>"></script>
-    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

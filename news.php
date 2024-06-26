@@ -46,185 +46,43 @@
                         <h2 class="text-black md:text-[40px] text-[20px] pb-4"> Новости и обзоры</h2>
                     </div>
             
-
                     <ul class="grid-container">    
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                     
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                     
-                       
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                       
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                        <li class="grid-item">
-                            <img src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
-                            <div class="wrapper-content">
-                                <p class="wrapper-content__text">
-                                    Японские машины, как и японский тюнинг,<br> вызывают у российских автолюбителей неоднозначные эмоции.<br> При этом, если авто просто ассоциируются с вполне...
-                                </p>
-                                <a href="#" class="wrapper-content__link">Аукцион, дилеры или вторичка? Где лучше купить авто</a>
-                                <div class="wrapper-content__date">
-                                    <date class="text-gray">12.04.2024</date>
-                                    <div class="flex justify-between items-center gap-2">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
-                                        </svg>
-                                        <p class="text-gray">2 минуты</p>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </li>     
-                     
+                        <?php
+                            $news = get_posts(array(
+                                'numberposts' => 2,
+                                'order' => 'title',
+                                'orderby' => 'rand',
+                                'post_type' => 'news',
+                                'category_name' => 'news',
+                                'suppress_filters' => true
+
                                 
+                            ));
+
+                            foreach ($news as $post) :
+                                echo '  <li class="grid-item">';
+                                echo '      <img src="'. get_field('photo__news') .'" alt="">';
+                                echo '      <div class="wrapper-content">';
+                                echo '          <p class="wrapper-content__text">';
+                                echo '              '. get_field('text_news') .'';
+                                echo '          </p>';
+                                echo '          <a href="'. get_permalink() .'" class="wrapper-content__link">'. get_field('name_news') .'</a>';
+                                echo '          <div class="wrapper-content__date">';
+                                echo '              <date class="text-gray">'. get_field('date_news') .'</date> '; 
+                                echo '              <div class="flex justify-between items-center gap-2">';
+                                echo '                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.49919 0.585205C4.14502 0.585205 0.58252 4.1477 0.58252 8.50187C0.58252 12.856 4.14502 16.4185 8.49919 16.4185C12.8534 16.4185 16.4159 12.856 16.4159 8.50187C16.4159 4.1477 12.8534 0.585205 8.49919 0.585205ZM11.8242 11.8269L7.70752 9.29354V4.54354H8.89502V8.6602L12.4575 10.7977L11.8242 11.8269Z" fill="#9BA5B4"/>
+                                                        </svg>';
+                                echo '                  <p class="text-gray">'. get_field('count_watches') .' минуты</p>';
+                                echo '              </div>';
+                                echo '          </div>
+                                            </div>
+                                        </li>                                              
+                                            
+                                    ';
+                        endforeach;
+                        wp_reset_postdata(); 
+                        ?>          
                     </ul>
                 </div>
             </section>

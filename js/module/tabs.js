@@ -3,6 +3,23 @@ export const initTabs = () => {
     const tabButtons = document.querySelectorAll("._tabs-item");
     const tabs_blocks = document.querySelectorAll("._tabs-block");
 
+    const buttonForFilter = document.querySelectorAll(".filter_country");
+
+    if (buttonForFilter) {
+        buttonForFilter.forEach((item) => {
+            item.addEventListener('click', (evt) => {
+                evt.preventDefault();
+                buttonForFilter.forEach(button => {
+                    button.classList.remove('_active');
+                    button.classList.remove('is-active');
+                });
+                item.classList.add('_active');
+                item.classList.add('is-active');
+            });
+        });
+    }
+    
+
     tabButtons.forEach(button => {
         button.addEventListener('click', (evt) => {
             evt.preventDefault();

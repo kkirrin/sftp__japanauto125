@@ -4,13 +4,14 @@
     Template Post Type: news
     */
 ?>
-<!-- 
+
+
 <?php get_header(2); ?>
 <main>
-            <h1 class="visually-hidden">Скрытый заголовок</h1>    -->
+            <h1 class="visually-hidden">Скрытый заголовок</h1>   
             
             <!-- Хлебные крошки -->
-            <!-- <section id="popular" class="md:pt-[40px] pt-[0px] md:pb-[0px] pb-[20px]" data-scroll>      
+            <section id="popular" class="md:pt-[40px] pt-[0px] md:pb-[0px] pb-[20px]" data-scroll>      
                 <div class="container">
                     <div class="breadcrumb">
                         <ul class="breadcrumb__list flex items-center justify-start gap-2">
@@ -35,10 +36,16 @@
                     </div>
                 </div>
             </section>  
- -->
+
+
+            <section class="md:pt-[120px] pt-[60px] md:pb-[0px] pb-[30px]">
+                <div class="container">
+                    <?php echo the_content(); ?>
+                </div>
+            </section>
 
             <!-- Новости -->
-            <!-- <section id="last__news--card" data-scroll>
+            <section id="last__news--card" data-scroll>
                 <div class="container rounded-[30px] relative md:p-[50px] p-[20px]">
                     <div class="rounded-[30px] flex gap-5 md:flex-row flex-col">
                         <img style="width: -webkit-fill-available;" class="rounded-[30px] object-cover max-h-[500px] max-w-[500px]" src="<?php echo get_template_directory_uri() . '/src/img/main/news_1.webp'; ?>" alt="">
@@ -135,10 +142,10 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <!-- Новости -->
-            <!-- <section id="last__news" class="md:pt-[120px] pt-[60px] md:pb-[0px] pb-[30px]" data-scroll>
+            <section id="last__news" class="md:pt-[120px] pt-[60px] md:pb-[0px] pb-[30px]" data-scroll>
                 <div class="container rounded-[30px] relative">
                     <div class="flex justify-between items-center">
                         <div class="md:w-2/3 w-full">
@@ -206,11 +213,11 @@
                         
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             
             <!-- Подписывайтесь -->
-            <!-- <section id="socials" class="p-5 md:pt-[120px] pt-[60px]" data-scroll>
+            <section id="socials" class="p-5 md:pt-[120px] pt-[60px]" data-scroll>
                 <div class="container bg-light-gray rounded-[30px] md:p-[40px] p-[25px] relative md:h-auto h-screen">
                     <div class="md:w-2/3 w-full">
                         <h3 class="text-black md:text-[40px] text-[20px] pb-4">#Подписывайтесь <br class="block md:hidden"> на нас в <span class="text-blue">соцсетях</span></h3>
@@ -240,9 +247,9 @@
                 </div>
             </section>
         
-        </main> -->
+        </main>
 
 
 
 
-<!-- <?php get_footer(); ?> -->
+<?php get_footer(); ?>

@@ -42,7 +42,7 @@ Template Name: главная
                                                 </a>
                                             </div>
                                             
-                                            <a href="catalog.html" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
+                                            <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
                                                 Перейти в каталог
                                             </a>
                                             
@@ -53,7 +53,7 @@ Template Name: главная
                                                     </a>
                                                 </div>
                                                 
-                                                <a href="catalog.html" class="button__transparent__to__dark__blue__to__dark__blue up">
+                                                <a href="https://japanauto125.ru/?page_id=8/" class="button__transparent__to__dark__blue__to__dark__blue up">
                                                     Перейти в каталог
                                                 </a>
                                             </div>
@@ -89,7 +89,7 @@ Template Name: главная
                                                 </a>
                                             </div>
                                             
-                                            <a href="catalog.html" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
+                                            <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
                                                 Перейти в каталог
                                             </a>
                                             
@@ -100,7 +100,7 @@ Template Name: главная
                                                     </a>
                                                 </div>
                                                 
-                                                <a href="catalog.html" class="button__transparent__to__dark__blue__to__dark__blue">
+                                                <a href="https://japanauto125.ru/?page_id=8/" class="button__transparent__to__dark__blue__to__dark__blue">
                                                     Перейти в каталог
                                                 </a>
                                             </div>
@@ -137,7 +137,7 @@ Template Name: главная
                                                 </a>
                                             </div>
                                             
-                                            <a href="catalog.html" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
+                                            <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
                                                 Перейти в каталог
                                             </a>
                                             
@@ -148,7 +148,7 @@ Template Name: главная
                                                     </a>
                                                 </div>
                                                 
-                                                <a href="catalog.html" class="button__transparent__to__dark__blue__to__dark__blue">
+                                                <a href="https://japanauto125.ru/?page_id=8/" class="button__transparent__to__dark__blue__to__dark__blue">
                                                     Перейти в каталог
                                                 </a>
                                             </div>
@@ -212,12 +212,11 @@ Template Name: главная
                                                 ));
 
                                                 foreach ($my_posts as $post) :                                
-                                                    echo '<div class="swiper-slide rounded-xl relative bg-light-gray">';
+                                                    echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
                                                     echo '  <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">'. get_field('status') .'</span></p>';
-                                                    echo '      <a href="#"><img class="clip" src="'. get_template_directory_uri() . '/src/img/main/car.webp' .'" alt="car">';
-                                                    echo '      </a> ';
+                                                    echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'</a>';
                                                     echo '      <div class="p-5">';
-                                                    echo '          <p class="font-bold text-black py-4">'. get_field('marka') .' '. get_field('model') .'</p>;';
+                                                    echo '          <p class="font-bold text-black py-4">'. get_field('marka') .' '. get_field('model') .'</p>';
                                                     echo '              <div class="card__list">';
                                                     echo '               <ul>';
                                                     echo '                 <li class="pb-2">Год выпуска</li>';
@@ -277,9 +276,9 @@ Template Name: главная
                                                 ));
 
                                                 foreach ($my_posts as $post) :                                
-                                                    echo '<div class="swiper-slide rounded-xl relative bg-light-gray">';
+                                                    echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
                                                     echo '  <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">'. get_field('status') .'</span></p>';
-                                                    echo '      <a href="#"><img class="clip" src="'. get_template_directory_uri() . '/src/img/main/car.webp' .'" alt="car">';
+                                                    echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
                                                     echo '          <p class="font-bold text-black py-4">'. get_field('marka') .' '. get_field('model') .'</p>;';
@@ -340,9 +339,8 @@ Template Name: главная
                                                 ));
 
                                                 foreach ($my_posts as $post) :                                
-                                                    echo '<div class="swiper-slide rounded-xl relative bg-light-gray">';
-                                                    echo '  <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">'. get_field('status') .'</span></p>';
-                                                    echo '      <a href="#"><img class="clip" src="'. get_template_directory_uri() . '/src/img/main/car.webp' .'" alt="car">';
+                                                    echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
+                                                    echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
                                                     echo '          <p class="font-bold text-black py-4">'. get_field('marka') .' '. get_field('model') .'</p>;';
@@ -452,8 +450,9 @@ Template Name: главная
                                             
                                         <img class="service__img" src="<?php echo get_template_directory_uri() .'/src/img/main/2_img.png'; ?>" alt="1-img">
                                     </div>
-                                    <p class="service__title">Работаем по договору</p>
-                                    <p class="service__text">Осознавая нашу ответственность, мы тщательно проработали договор, с которым можно ознакомиться ниже</p>
+                                    <p class="service__title">Оплата авто при получении</p>
+                                    <p class="service__text">Вы можете забронировать автомобиль в пути, 
+                                    а оплатить его при получении</p>
                                 </div>
                                 <div class="rounded-3xl border p-6 service__card">
                                     <div class="flex justify-between">
@@ -474,8 +473,8 @@ Template Name: главная
                                             
                                         <img class="service__img" src="<?php echo get_template_directory_uri() .'/src/img/main/3_img.png'; ?>" alt="1-img">
                                     </div>
-                                    <p class="service__title">Работаем по договору</p>
-                                    <p class="service__text">Осознавая нашу ответственность, мы тщательно проработали договор, с которым можно ознакомиться ниже</p>
+                                    <p class="service__title">Работа «под ключ»</p>
+                                    <p class="service__text">Полный пакет услуг от подбора и покупки, до таможенного оформления и доставки в любой город России</p>
                                 </div>
                                 <div class="rounded-3xl border p-6 service__card">
                                     <div class="flex justify-between">
@@ -496,8 +495,8 @@ Template Name: главная
                                             
                                         <img class="service__img" src="<?php echo get_template_directory_uri() .'/src/img/main/4_img.png'; ?>" alt="1-img">
                                     </div>
-                                    <p class="service__title">Работаем по договору</p>
-                                    <p class="service__text">Осознавая нашу ответственность, мы тщательно проработали договор, с которым можно ознакомиться ниже</p>
+                                    <p class="service__title">Поддержка 24/7</p>
+                                    <p class="service__text">Присылаем фото и видео подтверждение на каждом этапе. Вы можете позвонить нам в любое время, если у вас возникнут вопросы</p>
                                 </div>
                             </div>
                        </div>              
@@ -742,7 +741,7 @@ Template Name: главная
                                 <h2 class="text-black pb-10">Дорожим репутацией,<br> гордимся результатами </h2>
                             </div>
                         </div>
-                        <!-- <iframe src="https://swdgts.ru/55935bcb351676f98a0c58acffd978e7" width="100%" height="400" frameborder="0"></iframe>  -->
+                        <iframe src="https://swdgts.ru/55935bcb351676f98a0c58acffd978e7" width="100%" height="400" frameborder="0"></iframe> 
                             
                     </div>
             </section> 
@@ -786,7 +785,7 @@ Template Name: главная
                             <h2 class="text-black md:text-[40px] text-[20px] pb-4">Последние новости и обзоры<h2>
                         </div>
                         <div class="md:flex gap-2 items-center hidden">
-                            <a href="/news.html" class="text-gray">Все новости</a>
+                            <a href="https://japanauto125.ru/?page_id=10/" class="text-gray">Все новости</a>
                             <svg width="19.003906" height="13.322266" viewBox="0 0 19.0039 13.3223" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs/>
                                 <path id="Vector 45" d="M15.58 5.66L11.63 1.71C11.24 1.31 11.24 0.69 11.63 0.29C12.03 -0.1 12.65 -0.1 13.05 0.29L18.7 5.95C19.1 6.35 19.1 6.97 18.7 7.36L13.05 13.02C12.65 13.42 12.03 13.42 11.63 13.02C11.24 12.62 11.24 12 11.63 11.61L15.58 7.66L0 7.66L0 5.66L15.58 5.66Z" fill="rgb(155, 165, 180)" fill-opacity="1.000000" fill-rule="evenodd"/>
@@ -803,7 +802,7 @@ Template Name: главная
                                     'numberposts' => 2,
                                     'order' => 'title',
                                     'orderby' => 'rand',
-                                    'post_type' => 'post',
+                                    'post_type' => 'news',
                                     'category_name' => 'news',
                                     'suppress_filters' => true
 
@@ -813,7 +812,7 @@ Template Name: главная
                                 foreach ($news as $post) :
                                     echo '<li class="rounded-[30px] flex gap-5 border border-light-gray md:flex-row flex-col">';
                                     echo '  <div class="relative">';
-                                    echo '      <img style="width: -webkit-fill-available;" class="rounded-[30px]" src="'. get_field('photo__news') .'" alt="">';
+                                    echo '      <img style="width: -webkit-fill-available; max-width: 350px;" class="rounded-[30px]" src="'. get_field('photo__news') .'" alt="">';
                                     echo '  </div>';
                                     echo '  <div class="flex gap-5 flex-col flow-wraw p-4">';
                                     echo '     <a href="'. get_permalink() .'" class="text-blue underline font-semibold hover:text-dark-blue transition-all">'. get_field('name_news') .'</a>';
@@ -831,9 +830,9 @@ Template Name: главная
                                                     </li>                                              
                                                 
                                             ';
-                                endforeach;
-                                wp_reset_postdata(); 
-                                ?>
+                            endforeach;
+                            wp_reset_postdata(); 
+                            ?>
                         </ul>
                     </div>
 
