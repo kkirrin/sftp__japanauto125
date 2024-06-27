@@ -11,10 +11,8 @@ export const initTabs = () => {
                 evt.preventDefault();
                 buttonForFilter.forEach(button => {
                     button.classList.remove('_active');
-                    button.classList.remove('is-active');
                 });
                 item.classList.add('_active');
-                item.classList.add('is-active');
             });
         });
     }

@@ -34,16 +34,15 @@
             <section class="pt-12 filter-swiper">
                 <div class="container relative">
                     <h2 class="text-black pb-12">Каталог автомобилей </h2>
-                    
 
                     <div class="tabs-container__btns">
-                        <button name="filter-name" id="2" class="filter_country md:text-lg text-xs _active">Автомобили из Японии</button>
-                        <button name="filter-name" id="3" class="filter_country md:text-lg text-xs">Автомобили из Кореи</button>
-                        <button name="filter-name" id="4" class="filter_country md:text-lg text-xs">Автомобили из Китая</button>
+                        <button name="filter-name" value="2" class="filter_country md:text-lg text-xs _active">Автомобили из Японии</button>
+                        <button name="filter-name" value="3" class="filter_country md:text-lg text-xs">Автомобили из Кореи</button>
+                        <button name="filter-name" value="4" class="filter_country md:text-lg text-xs">Автомобили из Китая</button>
                     </div>
         
     
-                    <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl">
+                    <div style="background-color: #F0F3F9; padding-left: 45px; padding-right: 45px; padding-top: 30px;" class=" pb-10 rounded-2xl">
                         <div class=" pt-8 flex items-center justify-between flex-wrap gap-5">
                             <h3 class="text-start font-bold md:text-3xl text-base">
                                 Подберите  автомобиль 
@@ -70,7 +69,7 @@
                         </div>    
                     
                         <div class="w-full rounded-xl">
-                            <form id="formForMain" class="pt-10 pb-10 grid grid-cols-1 md:grid-cols-4 gap-4 uppercase">
+                            <form id="formForMain" class="pt-10 pb-10 grid grid-cols-1 md:grid-cols-4 gap-4">
                                 <div class="mb-4">
                                     <label class="block text-black text-sm mb-2 font-semibold" for="make">
                                         Марка
@@ -106,136 +105,27 @@
 
                                 <div class="mb-4">
                                     <label class="block text-black text-sm mb-2 font-semibold" for="make">
-                                        Тип кузова
-                                    </label>
-                                    <select id="transmition" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
-                                        <option class="text-opacity-10">Выберите</option>                
-                                    </select>
-                                </div>
-
-                                <div class="mb-4">
-                                    <label class="block text-black text-sm mb-2 font-semibold" for="make">
                                         Объем 
                                     </label>
                                     <div class="flex gap-10">
                                         <div class="w-full">
-                                            <select id="value_from" name="make" class="select input block appearance-none w-full text-gray  px-4 py-2 pr-8 rounded">
-                                                <option>от</option>
-                                                <option>600</option>
-                                                <option>700</option>
-                                                <option>800</option>
-                                                <option>900</option>
-                                                <option>1000</option>
-                                                <option>1100</option>
-                                                <option>1200</option>
-                                                <option>1300</option>
-                                                <option>1400</option>
-                                                <option>1500</option>
-                                                <option>1600</option>
-                                                <option>1700</option>
-                                                <option>1800</option>
-                                                <option>1900</option>
-                                                <option>2000</option>
-                                                <option>2100</option>
-                                                <option>2200</option>
-                                                <option>2300</option>
-                                                <option>2400</option>
-                                                <option>2500</option>
-                                                <option>2600</option>
-                                                <option>2700</option>
-                                                <option>2800</option>
-                                                <option>2900</option>
-                                                <option>3000</option>
-                                                <option>3100</option>
-                                                <option>3200</option>
-                                                <option>3200</option>
-                                                <option>3300</option>
-                                                <option>3400</option>
-                                                <option>3500</option>
-                                                <option>3600</option>
-                                                <option>3700</option>
-                                                <option>3800</option>
-                                                <option>3900</option>
-                                                <option>4000</option>
-                                                <option>4100</option>
-                                                <option>4200</option>
-                                                <option>4300</option>
-                                                <option>4400</option>
-                                                <option>4500</option>
-                                                <option>4600</option>
-                                                <option>4700</option>
-                                                <option>4800</option>
-                                                <option>4900</option>
-                                                <option>5000</option>
-                                                <option>5200</option>
-                                                <option>5300</option>
-                                                <option>5400</option>
-                                                <option>5500</option>
-                                                <option>5600</option>
-                                                <option>5700</option>
-                                                <option>5800</option>
-                                                <option>5900</option>
-                                                <option>6000</option>
+                                            <select id="volume_from" name="volume_from" class="select input block appearance-none w-full text-gray  px-4 py-2 pr-8 rounded">
+                                                <option value=''>от</option>
+                                                <?php 
+                                                    for($i = 600; $i <= 6000; $i += 100) {
+                                                        echo '<option value="'. $i .'">'.$i.'</option>';
+                                                    }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="w-full custom-select">
-                                            <select id="value_to" name="make" class="select text-gray input block appearance-none w-full px-4 py-2 pr-8 rounded" > 
-                                                <option>до</option>
-                                                <option>600</option>
-                                                <option>700</option>
-                                                <option>800</option>
-                                                <option>900</option>
-                                                <option>1000</option>
-                                                <option>1100</option>
-                                                <option>1200</option>
-                                                <option>1300</option>
-                                                <option>1400</option>
-                                                <option>1500</option>
-                                                <option>1600</option>
-                                                <option>1700</option>
-                                                <option>1800</option>
-                                                <option>1900</option>
-                                                <option>2000</option>
-                                                <option>2100</option>
-                                                <option>2200</option>
-                                                <option>2300</option>
-                                                <option>2400</option>
-                                                <option>2500</option>
-                                                <option>2600</option>
-                                                <option>2700</option>
-                                                <option>2800</option>
-                                                <option>2900</option>
-                                                <option>3000</option>
-                                                <option>3100</option>
-                                                <option>3200</option>
-                                                <option>3200</option>
-                                                <option>3300</option>
-                                                <option>3400</option>
-                                                <option>3500</option>
-                                                <option>3600</option>
-                                                <option>3700</option>
-                                                <option>3800</option>
-                                                <option>3900</option>
-                                                <option>4000</option>
-                                                <option>4100</option>
-                                                <option>4200</option>
-                                                <option>4300</option>
-                                                <option>4400</option>
-                                                <option>4500</option>
-                                                <option>4600</option>
-                                                <option>4700</option>
-                                                <option>4800</option>
-                                                <option>4900</option>
-                                                <option>5000</option>
-                                                <option>5200</option>
-                                                <option>5300</option>
-                                                <option>5400</option>
-                                                <option>5500</option>
-                                                <option>5600</option>
-                                                <option>5700</option>
-                                                <option>5800</option>
-                                                <option>5900</option>
-                                                <option>6000</option>
+                                            <select id="volume_to" name="volume_to" class="select text-gray input block appearance-none w-full px-4 py-2 pr-8 rounded" > 
+                                                <option value="">до</option>
+                                                <?php 
+                                                    for($i = 600; $i <= 6000; $i += 100) {
+                                                        echo '<option value="'. $i .'">'.$i.'</option>';
+                                                    }
+                                                ?>
                                             </select>   
                                         
                                         </div>
@@ -249,59 +139,24 @@
                                     </label>
                                     <div class="flex gap-10">
                                         <div class="w-full">
-                                            <select id="year_from" name="make" class="text-gray w-full px-4 py-2 pr-8 rounded-lg">
-                                                <option>от</option>
-                                                <option>2001</option>
-                                                <option>2002</option>
-                                                <option>2003</option>
-                                                <option>2004</option>
-                                                <option>2005</option>
-                                                <option>2006</option>
-                                                <option>2007</option>
-                                                <option>2008</option>
-                                                <option>2009</option>
-                                                <option>2010</option>
-                                                <option>2011</option>
-                                                <option>2012</option>
-                                                <option>2013</option>
-                                                <option>2014</option>
-                                                <option>2015</option>
-                                                <option>2016</option>
-                                                <option>2017</option>
-                                                <option>2018</option>
-                                                <option>2019</option>
-                                                <option>2020</option>
-                                                <option>2021</option>
-                                                <option>2022</option>
-                                                <option>2023</option>
+                                            <select id="year_from" name="year_from" class="text-gray w-full px-4 py-2 pr-8 rounded-lg">
+                                                <option value="">от</option>
+                                                <?php 
+                                                    for($i = (int) date('Y'); $i > 1999; $i--) {
+                                                        echo '<option value="'. $i .'">'.$i.'</option>';
+                                                    }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="w-full">
-                                            <select id="year_to" name="make" class=" text-gray w-full px-4 py-2 pr-8 rounded-lg" > 
-                                                <option>до</option>
-                                                <option>2001</option>
-                                                <option>2002</option>
-                                                <option>2003</option>
-                                                <option>2004</option>
-                                                <option>2005</option>
-                                                <option>2006</option>
-                                                <option>2007</option>
-                                                <option>2008</option>
-                                                <option>2009</option>
-                                                <option>2010</option>
-                                                <option>2011</option>
-                                                <option>2012</option>
-                                                <option>2013</option>
-                                                <option>2014</option>
-                                                <option>2015</option>
-                                                <option>2016</option>
-                                                <option>2017</option>
-                                                <option>2018</option>
-                                                <option>2019</option>
-                                                <option>2020</option>
-                                                <option>2021</option>
-                                                <option>2022</option>
-                                                <option>2023</option>
+                                            <select id="year_to" name="year_to" class=" text-gray w-full px-4 py-2 pr-8 rounded-lg" > 
+                                                <option value="">до</option>
+                                                <?php 
+                                                    for($i = (int) date('Y'); $i > 1999; $i--) {
+                                                        echo '<option value="'. $i .'">'.$i.'</option>';
+                                                        var_dump($i);
+                                                    }
+                                                ?>
                                             </select>
                                         </div>
                                         
@@ -314,52 +169,14 @@
                                     </label>
                                     <div class="flex gap-10">
                                     <div class="w-full">
-                                        <select id="price_from" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray">
-                                            <option>от</option>
-                                            <option>100 000</option>
-                                            <option>250 000</option>
-                                            <option>500 000</option>
-                                            <option>750 000</option>
-                                            <option>1 000 000</option>
-                                            <option>1 500 000</option>
-                                            <option>2 000 000</option>
-                                            <option>2 500 000</option>
-                                            <option>3 000 000</option>
-                                            <option>3 500 000</option>
-                                            <option>4 500 000</option>
-                                            <option>5 000 000</option>
-                                            <option>5 500 000</option>
-                                            <option>6 000 000</option>
-                                            <option>6 500 000</option>
-                                            <option>7 000 000</option>
-                                            <option>8 000 000</option>
-                                        </select>
+                                        <input type="number" id="price_from" name="price_from" class="w-full px-4 py-2 pr-8 rounded-lg text-gray" />
                                     </div>
                                     <div class="w-full">
-                                        <select id="price_to" name="make" class="w-full px-4 py-2 pr-8 rounded-lg text-gray" > 
-                                            <option>до</option>
-                                            <option>100 000</option>
-                                            <option>250 000</option>
-                                            <option>500 000</option>
-                                            <option>750 000</option>
-                                            <option>1 000 000</option>
-                                            <option>1 500 000</option>
-                                            <option>2 000 000</option>
-                                            <option>2 500 000</option>
-                                            <option>3 000 000</option>
-                                            <option>3 500 000</option>
-                                            <option>4 500 000</option>
-                                            <option>5 000 000</option>
-                                            <option>5 500 000</option>
-                                            <option>6 000 000</option>
-                                            <option>6 500 000</option>
-                                            <option>7 000 000</option>
-                                            <option>8 000 000</option>
-                                        </select>
+                                        <input type="number" id="price_to" name="price_to" class="w-full px-4 py-2 pr-8 rounded-lg text-gray" />
                                     </div>
                                     </div>
                                 </div>
-                            
+
                                 
                                 
                                 <div class="flex items-center justify-end pt-2 ">
@@ -385,8 +202,8 @@
             <!-- Контактная форма -->
             <section id="form" class="md:pt-[120px] pt-[60px] md:mb-auto mb-[80px] md:p-5 p-0" data-scroll>
                 <div class="container rounded-[30px] relative">
-                    <img class="md:block hidden rounded-[20px] parallax__img__first" src="<?php echo get_template_directory_uri() . '/src/img/main/card_bg.webp'; ?>" alt="">
-                    <img class="block md:hidden rounded-[20px] h-screen w-full" src="<?php echo get_template_directory_uri() . '/src/img/main/card_s.webp'; ?>" alt="">
+                    <img class="md:block hidden rounded-[20px] parallax__img__first" src="<?php echo get_template_directory_uri() . '/src/img/main/catalog_bg.webp'; ?>" alt="">
+                    <img class="block md:hidden rounded-[20px] h-screen w-full" src="<?php echo get_template_directory_uri() . '/src/img/main/catalog_bg_s.webp'; ?>" alt="">
                         <div class="absolute z-10 md:top-[50px] top-[20px] md:left-[100px] left-0 md:w-2/3 w-full md:p-[0] p-[50px]">
                             <div class="md:w-2/3 w-full">
                                 <h2 class="text-white"> Не нашли нужный <br> автомобиль?</h2>
@@ -417,9 +234,10 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="scale-100 absolute md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg] right-0 md:z-0 z-0 wow fadeInRight parallax__img__first"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower_black.svg'; ?>" alt="" >
-
-                </div>
+                        
+                        
+                        <img style="right: 0;" class="scale-100 absolute md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg] right-0 md:z-0 z-0 wow fadeInRight parallax__img__first"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower_black.svg'; ?>" alt="" >
+                    </div>
             </section>
           
             
@@ -429,4 +247,4 @@
 
 
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> type="number"

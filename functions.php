@@ -89,96 +89,172 @@ function theme_add_scripts()
 
 
 
-// фильтры
-add_action('wp_ajax_get_filter', 'filterCatalog');
-add_action('wp_ajax_nopriv_get_filter', 'filterCatalog');
+    // фильтры
+    add_action('wp_ajax_get_filter', 'filterCatalog');
+    add_action('wp_ajax_nopriv_get_filter', 'filterCatalog');
 
-// вывести машины в каталог сразу
-add_filter('wp_ajax_get_catalog', 'showCatalog');
-add_filter('wp_ajax_nopriv_get_catalog', 'showCatalog');
+    // вывести машины в каталог сразу
+    add_filter('wp_ajax_get_catalog', 'showCatalog');
+    add_filter('wp_ajax_nopriv_get_catalog', 'showCatalog');
 
-function filterCatalog() {
-    $options = $_POST['filter_options'];
+    function filterCatalog() {
+        $options = $_POST['filter_options'];
 
-    $meta_value = $_POST['options']['where']['value']; 
+        $meta_value = $options['where']['value']; 
+        // $meta_value = 'Kia';
 
-    global $wpdb;
+        global $wpdb;
 
-    $query = "SELECT ". $options['select'] . " FROM ". $options['from'] ." WHERE meta_key = '". $options['filterName'] ."'";
-    
-    if($meta_value != '') {
-        $query .= " AND meta_value = '". $meta_value ."'";
-    }
+        $query = "SELECT ". $options['select'] . " FROM ". $options['from'] ." WHERE meta_key = '". $options['filterName'] ."'";
+        
 
-    $query .= " GROUP BY meta_value ORDER BY meta_value ASC";
-    $query_result = $wpdb->get_results( $query, OBJECT );
-
-    echo json_encode(array(
-        'query_result' => $query_result,
-        'query' => $query,
-        // 'meta_query' => array(
-        //     array(
-        //         'key' => 'fuel',
-        //         'value' => $fuel,
-        //     ),
-        //     array(
-        //         'key' => 'privod',
-        //         'value' => $privod,
-        //     ),
-        //     array(
-        //         'key' => 'marka',
-        //         'value' => $meta_value,
-        //     ),
-        //     array(
-        //         'key' => 'model',
-        //         'value' => $meta_value,
-
-        //     )
-        // ),
-    ), JSON_UNESCAPED_UNICODE);
-    die;
-}
-
-
-function showCatalog() {
-    $options = $_POST['where'];
-    $category_id = $options['category_id'];
-    $query_result = get_posts(array(
-        'numberposts' => 25,
-        'order'    => 'title',
-        'orderby'  => 'rand',
-        'category' => $category_id,
-        'post_type'=> 'post',
-        'suppress_filters' => true
-    ));
-
-    $products = array();
-
-    foreach ($query_result as $result) {
-        $meta_values = get_post_meta($result->ID);
-        $photo_id = get_post_thumbnail_id($result->ID);
-        $photo_url = wp_get_attachment_image_src($photo_id, 'full')[0];
-        $product_link = get_permalink($result->ID);
-
-        $product_data = array(
-            'id' => $result->ID,
-            'title' => $result->post_title,
-            'meta_data' => array(),
-            'photo' => $photo_url,
-            'product_link' => $product_link, 
-        );
-
-        foreach ($meta_values as $key => $value) {
-            $product_data['meta_data'][$key] = implode(', ', $value); 
+        if($meta_value != '') {
+            $query .= " AND meta_value = '". $meta_value ."'";
         }
 
-        $products[] = $product_data;
+        $query .= " GROUP BY meta_value ORDER BY meta_value ASC";
+        $query_result = $wpdb->get_results( $query, OBJECT );
+
+        echo json_encode(array(
+            'query_result' => $query_result,
+            'query' => $query,
+            'meta_value' => $meta_value
+        ), JSON_UNESCAPED_UNICODE);
+        die;
     }
 
-    echo json_encode(array('products' => $products), JSON_UNESCAPED_UNICODE);
-    die;
 
-}
+    function showCatalog() {
+        $options = $_POST['filter_options'];
+        $meta_data = array();
+        if($options['where']['marka'] != '') {
+            $meta_data[] = array(
+                'key' =>'marka',
+                'value' => $options['where']['marka'],
+            );
+        }
+        if($options['where']['model'] != '') {
+             $meta_data[] = array(
+                'key' =>'model',
+                'value' => $options['where']['model'],
+            );
+        }
+        if($options['where']['fuel'] != '') {
+            $meta_data[] = array(
+                'key' =>'fuel',
+                'value' => $options['where']['fuel'],
+            );
+        }
+        if($options['where']['privod'] != '') {
+            $meta_data[] = array(
+                'key' =>'privod',
+                'value' => $options['where']['privod'],
+            );
+        }
+
+        
+        if($options['where']['status'] != '') {
+            $meta_data[] = array(
+                'key' =>'status',
+                'value' => $options['where']['status'],
+            );
+        }
+
+
+        if($options['where']['price_from'] != '') {
+            $meta_data[] = array(
+                'key' =>'price',
+                'value' => $options['where']['price_from'],
+                'meta_compare' => '>='
+            );
+        }
+        if($options['where']['price_to'] != '') {
+            $meta_data[] = array(
+                'key' =>'price',
+                'value' => $options['where']['price_to'],
+                'meta_compare' => '<='
+            );
+        }
+
+
+
+        if($options['where']['volume_from'] != '') {
+            $meta_data[] = array(
+                'key' =>'engine_v',
+                'value' => $options['where']['volume_from'],
+                'meta_compare' => '>='
+            );
+        }
+        if($options['where']['volume_to'] != '') {
+            $meta_data[] = array(
+                'key' =>'engine_v',
+                'value' => $options['where']['volume_to'],
+                'meta_compare' => '<='
+            );
+        }
+
+
+
+        if($options['where']['year_from'] != '') {
+            $meta_data[] = array(
+                'key' =>'year',
+                'value' => $options['where']['year_from'],
+                'meta_compare' => '>='
+
+            );
+        }
+        if($options['where']['year_to'] != '') {
+            $meta_data[] = array(
+                'key' =>'year',
+                'value' => $options['where']['year_to'],
+                'meta_compare' => '<='
+            );
+        }
+
+
+        $query_args = array(
+            'post_type' => 'post',
+            'category' => $options['category_id'],
+            'numberposts' => 25,
+            'order' => 'title',
+            'orderby' => 'asc',
+            'meta_query' => $meta_data
+        );
+
+        $query_result = get_posts($query_args);
+
+            
+        
+        $products = array();
+
+        foreach ($query_result as $result) {
+            $meta_values = get_post_meta($result->ID);
+            $photo_id = get_post_thumbnail_id($result->ID);
+            $photo_url = wp_get_attachment_image_src($photo_id, 'full')[0];
+            $product_link = get_permalink($result->ID);
+
+            $product_data = array(
+                'id' => $result->ID,
+                'title' => $result->post_title,
+                'meta_data' => array(),
+                'photo' => $photo_url,
+                'product_link' => $product_link, 
+            );
+
+            foreach ($meta_values as $key => $value) {
+                $product_data['meta_data'][$key] = implode(', ', $value); 
+            }
+
+            $products[] = $product_data;
+        }
+
+        echo json_encode(array(
+            'products' => $products,
+            'status' => '-_-',
+        ), JSON_UNESCAPED_UNICODE);
+            die;
+
+    }
 
     // Добавляем поддержку шорткодов в текстовых виджетах
     add_filter('widget_text', 'do_shortcode');

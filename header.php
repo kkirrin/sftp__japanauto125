@@ -107,7 +107,7 @@
                             </li>
                             <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/?page_id=8">Каталог</a></li>
                             <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
-                            <li class="mr-1"><address class="text-white decoration-transparent">г. Уссурийск, Тургенева 1-й переулок, 5</address></li>
+                            <li class="mr-1"><p class="text-white">г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
                             <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="tel:+79247388555">+7 (924) 738-85-55</a></li>
                         </ul>
 

@@ -26,6 +26,15 @@ Author: Kkirrinweb org INSIDE360
   display: block !important;
 }
 
+.filter_country::after {
+  content: '';
+  height: 30px;
+  position: absolute;
+  right: -55%; /* Изменяем на right: 0 */
+  width: 2px; /* Добавляем ширину */
+  background: rgb(157, 190, 239);
+}
+
 
 .filter_country {
 
@@ -72,6 +81,10 @@ Author: Kkirrinweb org INSIDE360
   ._tabs-item, ._tabs-item__link {
     padding: 5px;
     width: 150px;
+}
+  ._tabs-block {
+    padding: 0px !important;
+  }
 }
 
   .tabs-container__btns {
@@ -625,11 +638,22 @@ Author: Kkirrinweb org INSIDE360
   background-color: #0088cc;
 }
 
+
+
 /*  */
+header .clip_box.left {
+    top: 0%;
+    border-bottom-right-radius: 20px;
+}
+
+header .clip_box.right {
+    top: 0%;
+    border-bottom-left-radius: 20px;
+}
 
 .clip_box {
   --bgc: #ffffff;
-  --border-radius: 34px;
+  --border-radius: 60px;
   --margin-horizontal: 10px;
   --margin-vertical: 20px;
   position: absolute;
@@ -752,7 +776,7 @@ Author: Kkirrinweb org INSIDE360
 }
 
 #auc .clip_box {
-  --border-radius: 25px;
+  --border-radius: 60px;
   --margin-horizontal: 15px;
   --margin-vertical: 30px;
 }
@@ -791,11 +815,13 @@ Author: Kkirrinweb org INSIDE360
 @media screen and (max-width: 480px) {
   .clip_box {
     --bgc: #ffffff;
-    --border-radius: 18px;
+    --border-radius: 50px;
     --margin-horizontal: 5px;
     --margin-vertical: 20px;
   }
-
+  #works_with_us svg {
+    top: 46px !important;
+  }
   .btn__menu--mobile.clip {
     display: block;
     box-sizing: border-box;
@@ -803,12 +829,25 @@ Author: Kkirrinweb org INSIDE360
     border: 1px solid var(--blue);
     border-radius: 10px;
   }
+  .auc__container {
+    padding-top: 220px !important;
+  }
+  #works_with_us .img__count {
+    width: 90px;
+    height: 104px;
+  }
+  
+}
+
+#works_with_us .img__count {
+  width: 35px;
+  height: 26px;;
 }
 
 @media screen and (max-width: 400px) {
   .clip_box {
     --bgc: #ffffff;
-    --border-radius: 15px;
+    --border-radius: 30px;
     --margin-horizontal: 1px;
     --margin-vertical: 1px;
   }
@@ -839,6 +878,19 @@ Author: Kkirrinweb org INSIDE360
   }
 }
 
+
+.main-bullet-swiper {
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  width: 10px;
+
+}
+.main-bullet-swiper.active {
+  width: 62px;
+  border-radius: 5px;
+  background: rgb(70, 125, 208);
+}
+
 .blue-circle-text {
   position: relative;
   padding-left: 15px;
@@ -848,7 +900,7 @@ Author: Kkirrinweb org INSIDE360
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 42%;
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
@@ -978,13 +1030,23 @@ Author: Kkirrinweb org INSIDE360
   }
 
   .blur-pattern--auc {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
 ._tabs-block {
   display: none !important;
 }
+
+._tabs-item::after {
+  content: '';
+  height: 30px;
+  position: absolute;
+  right: -220%; /* Изменяем на right: 0 */
+  width: 2px; /* Добавляем ширину */
+  background: rgb(157, 190, 239);
+}
+
 
 ._tabs-block._active {
   display: block !important;
@@ -1004,7 +1066,6 @@ Author: Kkirrinweb org INSIDE360
 }
 
 ._tabs-item, ._tabs-item__link {
-
   cursor: pointer;
   padding: 10px;
   margin: 5px;
@@ -1064,7 +1125,13 @@ Author: Kkirrinweb org INSIDE360
     height: 5px;
     background-color: var(--white);
     border-radius: 50%;
-}
+  }
+  ._tabs-item::after {
+    content: '';
+    height: 30px;
+    right: -220%;
+  }
+
 }
 
 .card__list {
@@ -1165,7 +1232,7 @@ Author: Kkirrinweb org INSIDE360
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--black);
   transition: color 0.9s ease-in-out;
 }
@@ -1228,10 +1295,15 @@ Author: Kkirrinweb org INSIDE360
 
 .auc__container {
   width: 70%;
-  padding-top: 150px;
-  padding-left: 150px;
+  padding-top: 350px;
+  padding-left: 100px;
   /* background-color: var(--gray); */
   /* backdrop-filter: blur(10px); */
+}
+#auc .parallax__img__first {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .auc__container p {
@@ -2799,6 +2871,11 @@ h3 {
   border-bottom-left-radius: 26px;
 }
 
+.rounded-b-\[30px\]{
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
 .border{
   border-width: 1px;
 }
@@ -3303,18 +3380,32 @@ a {
 }
 
 .swiper-pagination {
-  --swiper-pagination-color: red;
+  --swiper-pagination-color: white;
   --swiper-pagination-bullet-size: 10px;
   --swiper-pagination-bullet-margin: 5px;
-  display: flex !important;
-  width: 10px !important;
-  height: 10px !important;
+  display: flex;
   z-index: 1000;
-  position: absolute;
+  top: 90% !important;
+  left: 50% !important;
+}
+
+
+@media screen and (max-width: 480px) {
+  .swiper-pagination {
+    left: 35% !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--white) !important;
+  background: none;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: red;
+  width: 62px !important;
+  border-radius: 5px !important;
+  background: rgb(70, 125, 208) !important;
 }
 
 [data-scroll] {
@@ -4071,3 +4162,5 @@ a {
       opacity: 0.2;
   }
 }
+
+

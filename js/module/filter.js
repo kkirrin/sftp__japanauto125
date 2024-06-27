@@ -26,7 +26,7 @@ export const filterCatalog = (filter_type = 'catalog', options = {}) => {
             },
             success: function(query_result) {
                 let result = JSON.parse(query_result);
-                console.log(result['query_result'], result['query'])
+                console.log(result['query_result'], result['query'], result['meta_value'])
                 let selected_value = options['selected'] !== undefined ? options['selected'] : '';
                 result['query_result']
                 let select_options = '<option value="" class="text-opacity-10">Выберите</option>';
@@ -48,11 +48,11 @@ export const filterCatalog = (filter_type = 'catalog', options = {}) => {
     if(filter_type === 'catalog') {
 
         let default_options = {
-            'box_id' : 'catalog_page',
-            'select' : '*',
-            'category_id' : 2,
-            'from' : 'jp_posts',
-            'order_by' : 'asc',
+            'box_id'                : 'catalog_page',
+            'select'                : '*',
+            'category_id'           : 2,
+            'where'                 : {
+            },
         };
 
         options = Object.assign(default_options, options);
@@ -95,17 +95,17 @@ export const filterCatalog = (filter_type = 'catalog', options = {}) => {
                         catalog_page    +=      ' </p>';
 
                         catalog_page    +=       '<a href="'+ product_link +'">';
-                        catalog_page    +=       '  <img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'+ photo_src +'" alt="car">';
+                        catalog_page    +=       '  <img style="width: -webkit-fill-available; min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'+ photo_src +'" alt="car">';
                         catalog_page    +=       '</a>';
 
                         catalog_page    +=       '<div class="p-5">';
-                        catalog_page    +=       '     <p class="font-bold text-black py-4">'+ marka +' '+ model +'</p>';
+                        catalog_page    +=       '     <p class="font-bold text-black py-4 text-[20px]">'+ marka +' '+ model +'</p>';
                         catalog_page    +=       '     <div class="card__list">';
                     
                         catalog_page    +=       '         <ul>';
-                        catalog_page    +=       '             <li class="pb-2 font-semibold">Год выпуска</li>';
-                        catalog_page    +=       '             <li class="pb-2 font-semibold">Пробег</li>';
-                        catalog_page    +=       '             <li class="pb-2 font-semibold">Двигатель</li>';
+                        catalog_page    +=       '             <li class="pb-2">Год выпуска</li>';
+                        catalog_page    +=       '             <li class="pb-2">Пробег</li>';
+                        catalog_page    +=       '             <li class="pb-2">Двигатель</li>';
                         catalog_page    +=       '         </ul>';
 
                         catalog_page    +=       '         <ul>';
@@ -155,55 +155,55 @@ export const filterCatalog = (filter_type = 'catalog', options = {}) => {
     }
 
 
-    if(filter_type === 'filter') {
-        let default_options = {
-            'box_id'                : '',
-            'select'                : 'marka',
-            'from'                  : 'main',
-            'order_by'              : 'marka',
-            'order_by_direction'    : 'asc',
-            'group_by'              : 'marka',
-        };
+    // if(filter_type === 'filter') {
+    //     let default_options = {
+    //         'box_id'                : '',
+    //         'select'                : 'marka',
+    //         'from'                  : 'main',
+    //         'order_by'              : 'marka',
+    //         'order_by_direction'    : 'asc',
+    //         'group_by'              : 'marka',
+    //     };
 
-        options = Object.assign(default_options, options);
+    //     options = Object.assign(default_options, options);
 
-        if(filter_type !== 'filter') {
-            options['select'] = filter_type,
-            options['order_by'] = filter_type;
-            options['group_by'] = filter_type;
-        }
+    //     if(filter_type !== 'filter') {
+    //         options['select'] = filter_type,
+    //         options['order_by'] = filter_type;
+    //         options['group_by'] = filter_type;
+    //     }
         
-        // jQuery.ajax({
-        //     url: '/wp-admin/admin-ajax.php',
-        //     type: 'POST',
-        //     data: {
-        //         action: 'get_filter',
-        //         auction_options: options,
-        //     },
-        //     beforeSend: function() {
-        //         jQuery('#'+ options['box_id']).addClass('downloaded');
-        //     },
-        //     success: function(query_result) {
-        //         let result = JSON.parse(query_result);
-        //         console.log(result);
-        //         let filter_options = result['filter'];
-        //         let select_options = '<option value="">Выбрать</option>';
-        //         let selected_value = options['selected'] !== undefined ? options['selected'] : '';
+    //     jQuery.ajax({
+    //         url: '/wp-admin/admin-ajax.php',
+    //         type: 'POST',
+    //         data: {
+    //             action: 'get_filter',
+    //             auction_options: options,
+    //         },
+    //         beforeSend: function() {
+    //             jQuery('#'+ options['box_id']).addClass('downloaded');
+    //         },
+    //         success: function(query_result) {
+    //             let result = JSON.parse(query_result);
+    //             console.log(result);
+    //             let filter_options = result['filter'];
+    //             let select_options = '<option value="">Выбрать</option>';
+    //             let selected_value = options['selected'] !== undefined ? options['selected'] : '';
                 
-        //         if(filter_options.length > 1) {
-        //             filter_options.forEach(function(filter_value, iteration) {
-        //                 select_options += '<option value="'+ filter_value[options['group_by'].toUpperCase()] + '"'+ (filter_value[options['group_by'].toUpperCase()] == selected_value ? ' selected' : '') +'>'+ filter_value[options['group_by'].toUpperCase()] +'</option>';
-        //             });
-        //         }
-        //         else if(filter_options.length == 1) {
-        //             select_options += '<option value="'+ filter_options[0][options['group_by'].toUpperCase()] + '" selected>'+ filter_options[0][options['group_by'].toUpperCase()] +'</option>';
-        //         }
+    //             if(filter_options.length > 1) {
+    //                 filter_options.forEach(function(filter_value, iteration) {
+    //                     select_options += '<option value="'+ filter_value[options['group_by'].toUpperCase()] + '"'+ (filter_value[options['group_by'].toUpperCase()] == selected_value ? ' selected' : '') +'>'+ filter_value[options['group_by'].toUpperCase()] +'</option>';
+    //                 });
+    //             }
+    //             else if(filter_options.length == 1) {
+    //                 select_options += '<option value="'+ filter_options[0][options['group_by'].toUpperCase()] + '" selected>'+ filter_options[0][options['group_by'].toUpperCase()] +'</option>';
+    //             }
 
-        //         jQuery('#'+ options['box_id']).removeClass('downloaded').empty().append(select_options);
-        //     },
-        //     error: function(text) {
-        //         console.log(text);
-        //     }
-        // });
-    }
+    //             jQuery('#'+ options['box_id']).removeClass('downloaded').empty().append(select_options);
+    //         },
+    //         error: function(text) {
+    //             console.log(text);
+    //         }
+    //     });
+    // }
 }

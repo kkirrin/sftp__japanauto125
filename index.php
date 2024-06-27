@@ -16,13 +16,13 @@ Template Name: главная
                 <div class="main-wrapper overflow-hidden container">
                     <div class="main-item relative overflow-hidden mt-6">
                         <div class="swiper-wrapper">               
-                            <div class="swiper-slide rounded-b-[26px] relative bg-black -z-10 max-h-screen">
-                                <img style="width: -webkit-fill-available;" class="parallax__img__first md:block hidden rounded-b-[26px] md:h-[840px] h-auto" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_1.webp'; ?>" alt="bg-1">
-                                <img style="width: -webkit-fill-available;" class="thumbnail md:hidden sm:block hidden rounded-b-[26px]" src="<?php echo get_template_directory_uri() . '/src/img/main/bg__m_1.webp'; ?>" alt="bg-1">
-                                <img style="width: -webkit-fill-available;" class="md:hidden sm:hidden block rounded-b-[26px] sm:max-h-[600px] object-cover max-h-screen" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_s_1.webp'; ?>" alt="bg-1">
+                            <div class="swiper-slide rounded-b-[30px] relative bg-black -z-10 max-h-screen">
+                                <img style="width: -webkit-fill-available;" class="parallax__img__first md:block hidden rounded-b-[30px] md:h-[840px] h-auto" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_1.webp'; ?>" alt="bg-1">
+                                <img style="width: -webkit-fill-available;" class="thumbnail md:hidden sm:block hidden rounded-b-[30px]" src="<?php echo get_template_directory_uri() . '/src/img/main/bg__m_1.webp'; ?>" alt="bg-1">
+                                <img style="width: -webkit-fill-available;" class="md:hidden sm:hidden block rounded-b-[30px] sm:max-h-[600px] object-cover max-h-screen" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_s_1.webp'; ?>" alt="bg-1">
                                 <div class="absolute md:top-40 top-20 md:left-40 left-0-0 md:w-2/3 w-full p-5">
                                     <h2>
-                                        Автомобили из Кореи с доставкой в Уссурийск
+                                        Автомобили из Кореи <br>с доставкой в Уссурийск
                                     </h2>
                                     
                                     <p class="md:text-[20px] text-[14px] text-white md:pt-10 pt-5 blue-circle-text font-semibold">
@@ -62,13 +62,13 @@ Template Name: главная
                                 
                                 </div>
                             </div>                 
-                            <div class="swiper-slide rounded-b-[26px] relative bg-black -z-10 max-h-screen">
-                                <img style="width: -webkit-fill-available;" class="parallax__img__first md:block hidden rounded-b-[26px] md:h-[840px] h-auto" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_2.webp'; ?>" alt="bg-1">
-                                <img style="width: -webkit-fill-available;" class="thumbnail md:hidden sm:block hidden rounded-b-[26px]" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_m_2.webp'; ?>" alt="bg-1">
-                                <img style="width: -webkit-fill-available;" class="md:hidden sm:hidden block rounded-b-[26px] sm:max-h-[600px] object-cover max-h-screen" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_s_2.webp'; ?>" alt="bg-1">
+                            <div class="swiper-slide rounded-b-[30px] relative bg-black -z-10 max-h-screen">
+                                <img style="width: -webkit-fill-available;" class="parallax__img__first md:block hidden rounded-b-[30px] md:h-[840px] h-auto" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_2.webp'; ?>" alt="bg-1">
+                                <img style="width: -webkit-fill-available;" class="thumbnail md:hidden sm:block hidden rounded-b-[30px]" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_m_2.webp'; ?>" alt="bg-1">
+                                <img style="width: -webkit-fill-available;" class="md:hidden sm:hidden block rounded-b-[30px] sm:max-h-[600px] object-cover max-h-screen" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_s_2.webp'; ?>" alt="bg-1">
                                 <div class="absolute md:top-40 top-20 md:left-40 left-0-0 md:w-2/3 w-full p-5">
                                     <h2>
-                                        Автомобили из Кореи с доставкой в Уссурийск
+                                        Автомобили из Кореи <br> с доставкой в Уссурийск
                                     </h2>
                                     
                                     <p class="md:text-[20px] text-[14px] text-white md:pt-10 pt-5 blue-circle-text font-semibold">
@@ -109,13 +109,13 @@ Template Name: главная
                                 
                                 </div>
                             </div>                 
-                            <div class="swiper-slide rounded-b-[26px] relative bg-black -z-10 max-h-screen">
-                                <img style="width: -webkit-fill-available;" class="parallax__img__first md:block hidden rounded-b-[26px] md:h-[840px] h-auto" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_3.webp'; ?>" alt="bg-1">
-                                <img style="width: -webkit-fill-available;" class="thumbnail md:hidden sm:block hidden rounded-b-[26px]" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_m_3.png'; ?>" alt="bg-1">
-                                <img style="width: -webkit-fill-available;" class="md:hidden sm:hidden block rounded-b-[26px] sm:max-h-[600px] object-cover max-h-screen" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_s_3.webp'; ?>" alt="bg-1">
+                            <div class="swiper-slide rounded-b-[30px] relative bg-black -z-10 max-h-screen">
+                                <img style="width: -webkit-fill-available;" class="parallax__img__first md:block hidden rounded-b-[30px] md:h-[840px] h-auto" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_3.webp'; ?>" alt="bg-1">
+                                <img style="width: -webkit-fill-available;" class="thumbnail md:hidden sm:block hidden rounded-b-[30px]" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_m_3.png'; ?>" alt="bg-1">
+                                <img style="width: -webkit-fill-available;" class="md:hidden sm:hidden block rounded-b-[30px] sm:max-h-[600px] object-cover max-h-screen" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_s_3.webp'; ?>" alt="bg-1">
                                 <div class="absolute md:top-40 top-20 md:left-40 left-0-0 md:w-2/3 w-full p-5">
                                     <h2>
-                                        Автомобили из Китая с доставкой в Уссурийск
+                                        Автомобили из Китая <br> с доставкой в Уссурийск
                                     </h2>
                                     
                                     <p class="md:text-[20px] text-[14px] text-white md:pt-10 pt-5 blue-circle-text font-semibold">
@@ -157,7 +157,9 @@ Template Name: главная
                                 
                                 </div>
                             </div> 
+                            <div class="swiper-pagination"></div>
                         </div>
+                        
                     </div>
                 </div>                        
             </section>
@@ -172,10 +174,10 @@ Template Name: главная
    
                        <div class="swiper-pagination"></div>
                        <div class="md:flex flex-nowrap gap-5 hidden">
-                           <button class="prev-popular-item rounded-full p-5 bg-light-gray hover:bg-gray hover:scale-110 transition-all up">
+                           <button style="width: 50px; height: 50px;" class="prev-popular-item rounded-full p-5 bg-light-gray hover:bg-gray hover:scale-110 transition-all up">
                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/prev.svg'; ?>" alt="влево">
                            </button>
-                           <button class="next-popular-item rounded-full p-5 bg-light-gray hover:bg-gray hover:scale-110 transition-all up ">
+                           <button style="width: 50px; height: 50px;" class="next-popular-item rounded-full p-5 bg-light-gray hover:bg-gray hover:scale-110 transition-all up ">
                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/next.svg'; ?>" alt="вправо" >
                            </button>
                        </div>
@@ -216,7 +218,7 @@ Template Name: главная
                                                     echo '  <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">'. get_field('status') .'</span></p>';
                                                     echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'</a>';
                                                     echo '      <div class="p-5">';
-                                                    echo '          <p class="font-bold text-black py-4">'. get_field('marka') .' '. get_field('model') .'</p>';
+                                                    echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>';
                                                     echo '              <div class="card__list">';
                                                     echo '               <ul>';
                                                     echo '                 <li class="pb-2">Год выпуска</li>';
@@ -224,9 +226,9 @@ Template Name: главная
                                                     echo '                 <li class="pb-2">Двигатель</li>'; 
                                                     echo '               </ul>';
                                                     echo '               <ul>';
-                                                    echo '                  <li class="pb-2">'. get_field('year') .'</li>';
-                                                    echo '                  <li class="pb-2">'. get_field('milleage') .'</li>';
-                                                    echo '                  <li class="pb-2">'. get_field('engine') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('year') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('milleage') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('engine') .'</li>';
                                                     echo '                </ul>';
                                                     echo '                </div>';
                                                     echo '                <p class="py-2">*Точную стоимость авто уточняйте у менеджера</p>';
@@ -281,7 +283,7 @@ Template Name: главная
                                                     echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
-                                                    echo '          <p class="font-bold text-black py-4">'. get_field('marka') .' '. get_field('model') .'</p>;';
+                                                    echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>;';
                                                     echo '              <div class="card__list">';
                                                     echo '               <ul>';
                                                     echo '                 <li class="pb-2">Год выпуска</li>';
@@ -289,9 +291,9 @@ Template Name: главная
                                                     echo '                 <li class="pb-2">Двигатель</li>'; 
                                                     echo '               </ul>';
                                                     echo '               <ul>';
-                                                    echo '                  <li class="pb-2">'. get_field('year') .'</li>';
-                                                    echo '                  <li class="pb-2">'. get_field('milleage') .'</li>';
-                                                    echo '                  <li class="pb-2">'. get_field('engine') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('year') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('milleage') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('engine') .'</li>';
                                                     echo '                </ul>';
                                                     echo '                </div>';
                                                     echo '                <p class="py-2">*Точную стоимость авто уточняйте у менеджера</p>';
@@ -343,7 +345,7 @@ Template Name: главная
                                                     echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
-                                                    echo '          <p class="font-bold text-black py-4">'. get_field('marka') .' '. get_field('model') .'</p>;';
+                                                    echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>;';
                                                     echo '              <div class="card__list">';
                                                     echo '               <ul>';
                                                     echo '                 <li class="pb-2">Год выпуска</li>';
@@ -351,9 +353,9 @@ Template Name: главная
                                                     echo '                 <li class="pb-2">Двигатель</li>'; 
                                                     echo '               </ul>';
                                                     echo '               <ul>';
-                                                    echo '                  <li class="pb-2">'. get_field('year') .'</li>';
-                                                    echo '                  <li class="pb-2">'. get_field('milleage') .'</li>';
-                                                    echo '                  <li class="pb-2">'. get_field('engine') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('year') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('milleage') .'</li>';
+                                                    echo '                  <li class="pb-2 font-semibold">'. get_field('engine') .'</li>';
                                                     echo '                </ul>';
                                                     echo '                </div>';
                                                     echo '                <p class="py-2">*Точную стоимость авто уточняйте у менеджера</p>';
@@ -559,12 +561,14 @@ Template Name: главная
 
 
                         <ul class="flex flex-col md:gap-12 gap-3 animate md:pl-[0px] pl-[50px]">
-                            <li class="border-light-gray rounded-[30px] border p-5 point">
+                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5 point">
                                 <div class="flex gap-6">
-                                    <svg class="" width="81.033691" height="60.253906" viewBox="0 0 81.0337 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <defs/>
-                                        <path id="01" d="M46.97 29.94C46.95 49.12 38.12 60.25 23.47 60.25C8.82 60.23 -0.06 49.06 0 29.94C0.02 10.87 8.88 0 23.47 0C38.06 0 47.01 10.91 46.97 29.94ZM69.47 0.8L81.03 0.8L81.03 58.98L68.74 58.98L68.74 12.48L68.39 12.48L55.07 20.83L55.07 9.92L69.47 0.8ZM12.52 29.94C12.5 43.35 16.81 50.05 23.47 50.05C30.13 50.05 34.45 43.35 34.41 29.94C34.41 16.73 30.09 10.09 23.47 10.09C16.83 10.09 12.53 16.73 12.52 29.94Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
+                                <!-- <svg width="97.205566" height="60.253906" viewBox="0 0 97.0337 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path id="01" d="M46.97 29.94C46.95 49.12 38.12 60.25 23.47 60.25C8.82 60.23 -0.06 49.06 0 29.94C0.02 10.87 8.88 0 23.47 0C38.06 0 47.01 10.91 46.97 29.94ZM69.47 0.8L81.03 0.8L81.03 58.98L68.74 58.98L68.74 12.48L68.39 12.48L55.07 20.83L55.07 9.92L69.47 0.8ZM12.52 29.94C12.5 43.35 16.81 50.05 23.47 50.05C30.13 50.05 34.45 43.35 34.41 29.94C34.41 16.73 30.09 10.09 23.47 10.09C16.83 10.09 12.53 16.73 12.52 29.94Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg> -->
+                                <img class="img__count" src="<?php echo get_template_directory_uri() . '/src/img/icons/01.png'; ?>" />
+
                                     
                                         
                                     <div>
@@ -579,15 +583,17 @@ Template Name: главная
                                 </div>
                                 
                             </li>
-                            <li class="border-light-gray rounded-[30px] border p-5 point">
+                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5 point">
                                 <div class="flex gap-6">
-                                    <svg class="h-[60px] w-[140px]" width="97.205566" height="60.253906" viewBox="0 0 97.2056 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- <svg class="h-[60px] w-[140px]" width="97.205566" height="60.253906" viewBox="0 0 97.2056 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <desc>
                                                 Created with Pixso.
                                         </desc>
                                         <defs/>
                                         <path id="02" d="M46.97 29.94C46.95 49.12 38.12 60.25 23.47 60.25C8.82 60.23 -0.06 49.06 0 29.94C0.02 10.87 8.88 0 23.47 0C38.06 0 47.01 10.91 46.97 29.94ZM97.2 58.98L55.72 58.98L55.72 50.11L76.44 30.93C81.71 25.85 84.56 22.67 84.56 18.04C84.56 12.92 80.76 9.74 75.64 9.74C70.33 9.74 66.81 13.16 66.83 18.73L55.15 18.73C55.13 7.3 63.51 0 75.72 0C88.2 0 96.44 7.12 96.44 17.22C96.44 23.84 93.22 29.29 81.26 40.21L72.77 48.53L72.77 48.92L97.2 48.92L97.2 58.98ZM12.52 29.94C12.5 43.35 16.81 50.05 23.47 50.05C30.13 50.05 34.45 43.35 34.41 29.94C34.41 16.73 30.09 10.09 23.47 10.09C16.83 10.09 12.53 16.73 12.52 29.94Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
+                                    </svg> -->
+
+                                    <img class="img__count" src="<?php echo get_template_directory_uri() . '/src//img/icons/02.png'; ?>" />
                                     
                                     <div>
                                         <p class="font-bold pb-2">
@@ -599,12 +605,13 @@ Template Name: главная
                                     </div>
                                 </div>
                             </li>
-                            <li class="border-light-gray rounded-[30px] border p-5">
+                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5">
                                 <div class="flex gap-6">
-                                    <svg class="h-[60px] w-[140px]" width="99.627441" height="60.253906" viewBox="0 0 99.6274 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- <svg class="h-[60px] w-[140px]" width="99.627441" height="60.253906" viewBox="0 0 99.6274 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <defs/>
                                         <path id="03" d="M46.97 29.94C46.95 49.12 38.12 60.25 23.47 60.25C8.82 60.23 -0.06 49.06 0 29.94C0.02 10.87 8.88 0 23.47 0C38.06 0 47.01 10.91 46.97 29.94ZM99.62 42.65C99.64 52.59 90.31 59.78 77.24 59.78C64.45 59.78 55.36 52.71 55.15 42.53L67.55 42.53C67.77 46.79 71.83 49.62 77.26 49.62C82.88 49.62 86.87 46.46 86.83 41.81C86.87 37.12 82.75 33.84 76.15 33.84L70.72 33.84L70.72 24.8L76.15 24.8C81.75 24.8 85.64 21.71 85.62 17.12C85.64 12.75 82.32 9.74 77.34 9.74C72.32 9.74 68.26 12.61 68.12 17.05L56.32 17.05C56.5 6.99 65.46 0 77.4 0C89.45 0 97.49 7.22 97.45 16.4C97.49 22.92 93 27.53 86.5 28.69L86.5 29.16C95.05 30.23 99.64 35.41 99.62 42.65ZM12.52 29.94C12.5 43.35 16.81 50.05 23.47 50.05C30.13 50.05 34.45 43.35 34.41 29.94C34.41 16.73 30.09 10.09 23.47 10.09C16.83 10.09 12.53 16.73 12.52 29.94Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="img__count" src="<?php echo get_template_directory_uri() . '/src/img/icons/03.png'; ?>" />
                                     
                                     
                                     <div>
@@ -642,11 +649,12 @@ Template Name: главная
                         
 
                         <ul class="flex flex-col md:gap-12 gap-3 md:pl-[0px] pl-[50px]">
-                            <li class="border-light-gray rounded-[30px] border p-5">
+                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5">
                                 <div class="flex gap-6">
-                                    <svg class="h-[60px] w-[140px]" width="86" height="63" viewBox="0 0 86 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- <svg class="h-[60px] w-[140px]" width="86" height="63" viewBox="0 0 86 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.88 21.16C0.88 18.0133 1.33333 15.1867 2.24 12.68C3.2 10.1733 4.53333 8.04 6.24 6.28C7.94667 4.52 10.0267 3.18667 12.48 2.28C14.9333 1.32 17.68 0.839997 20.72 0.839997C23.7067 0.839997 26.4267 1.32 28.88 2.28C31.3333 3.18667 33.4133 4.49333 35.12 6.2C36.8267 7.90666 38.1333 9.98666 39.04 12.44C40 14.8933 40.48 17.6133 40.48 20.6V41.24C40.48 47.8533 38.8 52.9733 35.44 56.6C32.08 60.2267 27.3333 62.04 21.2 62.04C14.8533 62.04 9.86667 60.2 6.24 56.52C2.66667 52.84 0.88 47.7467 0.88 41.24V21.16ZM11.52 40.92C11.52 44.6 12.32 47.4267 13.92 49.4C15.52 51.32 17.84 52.28 20.88 52.28C26.8533 52.28 29.84 48.5733 29.84 41.16V21.16C29.84 17.7467 29.04 15.1333 27.44 13.32C25.8933 11.5067 23.68 10.6 20.8 10.6C17.92 10.6 15.6533 11.5333 14 13.4C12.3467 15.2667 11.52 17.8533 11.52 21.16V40.92ZM43.5656 43.48L70.7656 1.88H79.7256V42.6H85.9656V52.12H79.7256V61H69.0856V52.12H43.5656V43.48ZM69.0856 42.6V19.8L54.3656 42.6H69.0856Z" fill="#DFE5F0"/>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="img__count" src="<?php echo get_template_directory_uri() . '/src/img/icons/04.png'; ?>" />
                                     
                                     <div>
                                         <p class="font-bold pb-2">
@@ -658,11 +666,12 @@ Template Name: главная
                                     </div>
                                 </div>
                             </li>
-                            <li class="border-light-gray rounded-[30px] border p-5">
+                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5">
                                 <div class="flex gap-6">
-                                    <svg class="h-[60px] w-[140px]" width="86" height="63" viewBox="0 0 86 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- <svg class="h-[60px] w-[140px]" width="86" height="63" viewBox="0 0 86 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.88 21.16C0.88 18.0133 1.33333 15.1867 2.24 12.68C3.2 10.1733 4.53333 8.04 6.24 6.28C7.94667 4.52 10.0267 3.18667 12.48 2.28C14.9333 1.32 17.68 0.839997 20.72 0.839997C23.7067 0.839997 26.4267 1.32 28.88 2.28C31.3333 3.18667 33.4133 4.49333 35.12 6.2C36.8267 7.90666 38.1333 9.98666 39.04 12.44C40 14.8933 40.48 17.6133 40.48 20.6V41.24C40.48 47.8533 38.8 52.9733 35.44 56.6C32.08 60.2267 27.3333 62.04 21.2 62.04C14.8533 62.04 9.86667 60.2 6.24 56.52C2.66667 52.84 0.88 47.7467 0.88 41.24V21.16ZM11.52 40.92C11.52 44.6 12.32 47.4267 13.92 49.4C15.52 51.32 17.84 52.28 20.88 52.28C26.8533 52.28 29.84 48.5733 29.84 41.16V21.16C29.84 17.7467 29.04 15.1333 27.44 13.32C25.8933 11.5067 23.68 10.6 20.8 10.6C17.92 10.6 15.6533 11.5333 14 13.4C12.3467 15.2667 11.52 17.8533 11.52 21.16V40.92ZM55.0856 43.32C55.6723 46.2 56.7656 48.4133 58.3656 49.96C60.019 51.5067 62.1256 52.28 64.6856 52.28C67.5656 52.28 69.9123 51.2667 71.7256 49.24C73.539 47.2133 74.4456 44.6 74.4456 41.4C74.4456 39.9067 74.2056 38.52 73.7256 37.24C73.2456 35.96 72.579 34.84 71.7256 33.88C70.8723 32.92 69.859 32.1733 68.6856 31.64C67.5123 31.1067 66.2323 30.84 64.8456 30.84C63.139 30.84 61.6723 31.1867 60.4456 31.88C59.219 32.52 57.939 33.6667 56.6056 35.32L47.1656 32.76L52.6856 1.88H79.4056V11.88H60.6856L58.7656 22.76C60.3123 22.12 61.619 21.6933 62.6856 21.48C63.7523 21.2133 64.979 21.08 66.3656 21.08C69.0856 21.08 71.5656 21.5867 73.8056 22.6C76.099 23.6133 78.0723 25.0267 79.7256 26.84C81.4323 28.6 82.739 30.7333 83.6456 33.24C84.6056 35.6933 85.0856 38.36 85.0856 41.24C85.0856 44.2267 84.579 47 83.5656 49.56C82.5523 52.0667 81.139 54.2533 79.3256 56.12C77.5656 57.9867 75.459 59.4533 73.0056 60.52C70.5523 61.5333 67.8856 62.04 65.0056 62.04C62.2323 62.04 59.619 61.56 57.1656 60.6C54.7656 59.64 52.6323 58.3333 50.7656 56.68C48.9523 54.9733 47.4856 52.9733 46.3656 50.68C45.2456 48.3867 44.6056 45.9333 44.4456 43.32H55.0856Z" fill="#DFE5F0"/>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="img__count" src="<?php echo get_template_directory_uri() . '/src/img/icons/05.png'; ?>" />
                                     
                                     <div>
                                         <p class="font-bold pb-2">
@@ -675,11 +684,12 @@ Template Name: главная
                                     </p>
                                 </div>
                             </li>
-                            <li class="border-light-gray rounded-[30px] border p-5">
+                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5">
                                 <div class="flex gap-6">
-                                    <svg class="h-[60px] w-[140px]" width="86" height="63" viewBox="0 0 86 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- <svg class="h-[60px] w-[140px]" width="86" height="63" viewBox="0 0 86 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.88 21.16C0.88 18.0133 1.33333 15.1867 2.24 12.68C3.2 10.1733 4.53333 8.04 6.24 6.28C7.94667 4.52 10.0267 3.18667 12.48 2.28C14.9333 1.32 17.68 0.839997 20.72 0.839997C23.7067 0.839997 26.4267 1.32 28.88 2.28C31.3333 3.18667 33.4133 4.49333 35.12 6.2C36.8267 7.90666 38.1333 9.98666 39.04 12.44C40 14.8933 40.48 17.6133 40.48 20.6V41.24C40.48 47.8533 38.8 52.9733 35.44 56.6C32.08 60.2267 27.3333 62.04 21.2 62.04C14.8533 62.04 9.86667 60.2 6.24 56.52C2.66667 52.84 0.88 47.7467 0.88 41.24V21.16ZM11.52 40.92C11.52 44.6 12.32 47.4267 13.92 49.4C15.52 51.32 17.84 52.28 20.88 52.28C26.8533 52.28 29.84 48.5733 29.84 41.16V21.16C29.84 17.7467 29.04 15.1333 27.44 13.32C25.8933 11.5067 23.68 10.6 20.8 10.6C17.92 10.6 15.6533 11.5333 14 13.4C12.3467 15.2667 11.52 17.8533 11.52 21.16V40.92ZM78.6856 1.88L64.5256 22.92C65.4323 22.6 66.2056 22.3867 66.8456 22.28C67.539 22.1733 68.3656 22.12 69.3256 22.12C71.6723 22.12 73.8323 22.6 75.8056 23.56C77.8323 24.4667 79.5656 25.7467 81.0056 27.4C82.4456 29.0533 83.5656 31.0267 84.3656 33.32C85.219 35.6133 85.6456 38.12 85.6456 40.84C85.6456 43.9333 85.139 46.7867 84.1256 49.4C83.1656 51.96 81.779 54.2 79.9656 56.12C78.1523 57.9867 76.019 59.4533 73.5656 60.52C71.1123 61.5333 68.3923 62.04 65.4056 62.04C62.419 62.04 59.6456 61.5333 57.0856 60.52C54.579 59.5067 52.3923 58.0933 50.5256 56.28C48.7123 54.4667 47.2723 52.3067 46.2056 49.8C45.1923 47.2933 44.6856 44.5733 44.6856 41.64C44.6856 40.2 44.7923 38.84 45.0056 37.56C45.219 36.2267 45.539 34.92 45.9656 33.64C46.4456 32.3067 47.059 30.9467 47.8056 29.56C48.5523 28.1733 49.459 26.68 50.5256 25.08L65.9656 1.88H78.6856ZM65.4856 52.28C68.3123 52.28 70.6056 51.32 72.3656 49.4C74.1256 47.48 75.0056 44.9733 75.0056 41.88C75.0056 38.7867 74.0723 36.28 72.2056 34.36C70.3923 32.3867 67.9656 31.4 64.9256 31.4C63.539 31.4 62.259 31.6667 61.0856 32.2C59.9123 32.7333 58.899 33.4533 58.0456 34.36C57.1923 35.2667 56.5256 36.36 56.0456 37.64C55.5656 38.92 55.3256 40.3333 55.3256 41.88C55.3256 43.3733 55.5656 44.76 56.0456 46.04C56.579 47.32 57.2723 48.44 58.1256 49.4C59.0323 50.3067 60.099 51.0267 61.3256 51.56C62.6056 52.04 63.9923 52.28 65.4856 52.28Z" fill="#DFE5F0"/>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="img__count" src="<?php echo get_template_directory_uri() . '/src/img/icons/06.png'; ?>" />
                                     
                                     <div>
                                         <p class="font-bold pb-2">
@@ -706,8 +716,8 @@ Template Name: главная
 
                     <div class="md:w-2/3 w-full flex gap-3 flex-col md:pt-5 pt-2">
                         <p class="white-circle-text text-white font-semibold md:text-2xl text-base">И не только, также можем доставить спецтехнику под заказ</p>
-                        <p class="text-light-gray md:text-xl text-base">
-                            Оставьте свои контакты, наш специалист свяжется с вами и проконсультирует по всем вопросам, если не хотите ждать <a href="#" class="font-bold text-white underline">напишите на WhatsApp </a>
+                        <p style="color: #9BA5B4;" class=" md:text-xl text-base opacity-10">
+                            Оставьте свои контакты, наш специалист свяжется с вами и проконсультирует <br> по всем вопросам, если не хотите ждать <a href="#" class="font-bold text-white underline">напишите на WhatsApp </a>
                         </p>
                     </div>
 
@@ -726,7 +736,7 @@ Template Name: главная
                         </form>
                     </div>
                         
-                    <img class="parallax__img__first scale-100 absolute md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg] -right-[0px] md:z-0 z-0 wow fadeInRight"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower.svg'; ?>" alt="" >
+                    <img style="right: -15px;" class="parallax__img__first scale-100 absolute md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg]  md:z-0 z-0 wow fadeInRight"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower.svg'; ?>" alt="" >
                     <img class="parallax__img__first scale-100 absolute md:top-20  top-auto md:bottom-auto bottom-0 -right-[0px] z-0 wow fadeInRight"  data-wow-delay="0.6s" src="<?php echo get_template_directory_uri() . '/src/img/main/car_catalog_1.webp'; ?>" alt="" >
                     <img class="parallax__img__first scale-100 absolute md:top-56 top-auto md:bottom-auto -bottom-[40px] -right-[0px] z-10 wow fadeInRight"  data-wow-delay="0.6s" src="<?php echo get_template_directory_uri() . '/src/img/main/car_catalog_2.webp'; ?>" alt="" >
                 </div>
@@ -751,7 +761,7 @@ Template Name: главная
                 <div class="container bg-light-gray rounded-[30px] md:p-[40px] p-[25px] relative">
                     <div class="md:w-2/3 w-full">
                         <h3 class="text-black md:text-[40px] text-[20px] pb-4">#Подписывайтесь <br class="block md:hidden"> на нас в <span class="text-blue">соцсетях</span></h3>
-                        <p class="text-gray md:text-xl text-sm">Где мы рассказываем о всей процедуре приобретения, оформлении и доставке авто, а также публикуем видео-отзывы реальных клиентов</p>
+                        <p class="text-gray md:text-xl text-sm">Где мы рассказываем о всей процедуре приобретения, <br> оформлении и доставке авто, а также публикуем видео-отзывы реальных клиентов</p>
                     </div>
                 
                     <div class="clip_box top right ">
@@ -915,7 +925,7 @@ Template Name: главная
                     </div>
 
                     <div class="pt-20 w-full">
-                        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37c2d7c946f9126e76a477e7ca815d42b6a8bd14b0bc56b5900f59c99e6aa228&amp;width=1440&amp;height=624&amp;lang=ru_RU&amp;scroll=true"></script> -->
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37c2d7c946f9126e76a477e7ca815d42b6a8bd14b0bc56b5900f59c99e6aa228&amp;width=1440&amp;height=624&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                         
                         

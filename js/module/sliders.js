@@ -14,9 +14,9 @@ export const initSlider = () => {
 
                 // If we need pagination
                 pagination: {
-                  clickable: true,
-                  el: `swiper-pagination`,
-               }
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                  },
               });
         }
 }
