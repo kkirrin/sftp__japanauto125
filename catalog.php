@@ -42,7 +42,7 @@
                     </div>
         
     
-                    <div style="background-color: #F0F3F9; padding-left: 45px; padding-right: 45px; padding-top: 30px;" class=" pb-10 rounded-2xl">
+                    <div style="background-color: #F0F3F9; border-radius: 30px; padding-left: 45px; padding-right: 45px; padding-top: 30px;" class=" pb-10">
                         <div class=" pt-8 flex items-center justify-between flex-wrap gap-5">
                             <h3 class="text-start font-bold md:text-3xl text-base">
                                 Подберите  автомобиль 
@@ -203,7 +203,7 @@
             <section id="form" class="md:pt-[120px] pt-[60px] md:mb-auto mb-[80px] md:p-5 p-0" data-scroll>
                 <div class="container rounded-[30px] relative">
                     <img class="md:block hidden rounded-[20px] parallax__img__first" src="<?php echo get_template_directory_uri() . '/src/img/main/catalog_bg.webp'; ?>" alt="">
-                    <img class="block md:hidden rounded-[20px] h-screen w-full" src="<?php echo get_template_directory_uri() . '/src/img/main/catalog_bg_s.webp'; ?>" alt="">
+                    <img class="block md:hidden rounded-[20px] h-screen w-full" src="<?php echo get_template_directory_uri() . '/src/img/main/catalog_s.webp'; ?>" alt="">
                         <div class="absolute z-10 md:top-[50px] top-[20px] md:left-[100px] left-0 md:w-2/3 w-full md:p-[0] p-[50px]">
                             <div class="md:w-2/3 w-full">
                                 <h2 class="text-white"> Не нашли нужный <br> автомобиль?</h2>
@@ -236,7 +236,7 @@
                         </div>
                         
                         
-                        <img style="right: 0;" class="scale-100 absolute md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg] right-0 md:z-0 z-0 wow fadeInRight parallax__img__first"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower_black.svg'; ?>" alt="" >
+                        <img class="catalog_pattern_img scale-90 absolute md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg] md:z-0 z-0 wow fadeInRight parallax__img__first"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower_black.svg'; ?>" alt="" >
                     </div>
             </section>
           
@@ -247,4 +247,4 @@
 
 
 
-<?php get_footer(); ?> type="number"
+<?php get_footer(); ?>

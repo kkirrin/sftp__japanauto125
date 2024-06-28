@@ -216,7 +216,7 @@ Template Name: главная
                                                 foreach ($my_posts as $post) :                                
                                                     echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
                                                     echo '  <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">'. get_field('status') .'</span></p>';
-                                                    echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'</a>';
+                                                    echo '      <a href="'. get_the_permalink() .'"><img style="width: -webkit-fill-available; min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'</a>';
                                                     echo '      <div class="p-5">';
                                                     echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>';
                                                     echo '              <div class="card__list">';
@@ -280,7 +280,7 @@ Template Name: главная
                                                 foreach ($my_posts as $post) :                                
                                                     echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
                                                     echo '  <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">'. get_field('status') .'</span></p>';
-                                                    echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
+                                                    echo '      <a href="'. get_the_permalink() .'"><img style="width: -webkit-fill-available; min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
                                                     echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>;';
@@ -342,7 +342,7 @@ Template Name: главная
 
                                                 foreach ($my_posts as $post) :                                
                                                     echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
-                                                    echo '      <a href="'. get_the_permalink() .'"><img style="min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
+                                                    echo '      <a href="'. get_the_permalink() .'"><img style="width: -webkit-fill-available;min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
                                                     echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>;';
@@ -514,8 +514,8 @@ Template Name: главная
                         <img class="clip md:w-[350px] w-[200px]" src="<?php echo get_template_directory_uri() .'/src/img/icons/logo__black.svg'; ?>" alt="">
                     </div>   
                     <img class="md:block hidden clip -z-10 rounded-2xl absolute parallax__img__first" src="<?php echo get_template_directory_uri() . '/src/img/main/auc.webp'; ?>" alt="">
-                    <img style="width: -webkit-fill-available;" class="md:max-h-[600px] max-h-screen object-cover block md:hidden clip -z-10 rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/main/auc_s.png'; ?>" alt="">
-                    <div class="auc__container h-screen absolute md:top-auto top-[5%] md:left-auto -left-[5%]">
+                    <img style="width: -webkit-fill-available;" class="auc__img md:max-h-[600px] object-cover block md:hidden clip -z-10 rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/main/auc_s.png'; ?>" alt="">
+                    <div class="auc__container absolute md:top-auto top-[5%] md:left-auto -left-[5%]">
                         <div class="blur-pattern--auc">
                             <img src="<?php echo get_template_directory_uri() .'/src/img/icons/points.svg"'; ?> alt="">
                             <p> 
@@ -649,7 +649,7 @@ Template Name: главная
                         
 
                         <ul class="flex flex-col md:gap-12 gap-3 md:pl-[0px] pl-[50px]">
-                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5">
+                            <li style="min-height: 132px; max-height: 162px;" class="border-light-gray rounded-[30px] border p-5">
                                 <div class="flex gap-6">
                                     <!-- <svg class="h-[60px] w-[140px]" width="86" height="63" viewBox="0 0 86 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.88 21.16C0.88 18.0133 1.33333 15.1867 2.24 12.68C3.2 10.1733 4.53333 8.04 6.24 6.28C7.94667 4.52 10.0267 3.18667 12.48 2.28C14.9333 1.32 17.68 0.839997 20.72 0.839997C23.7067 0.839997 26.4267 1.32 28.88 2.28C31.3333 3.18667 33.4133 4.49333 35.12 6.2C36.8267 7.90666 38.1333 9.98666 39.04 12.44C40 14.8933 40.48 17.6133 40.48 20.6V41.24C40.48 47.8533 38.8 52.9733 35.44 56.6C32.08 60.2267 27.3333 62.04 21.2 62.04C14.8533 62.04 9.86667 60.2 6.24 56.52C2.66667 52.84 0.88 47.7467 0.88 41.24V21.16ZM11.52 40.92C11.52 44.6 12.32 47.4267 13.92 49.4C15.52 51.32 17.84 52.28 20.88 52.28C26.8533 52.28 29.84 48.5733 29.84 41.16V21.16C29.84 17.7467 29.04 15.1333 27.44 13.32C25.8933 11.5067 23.68 10.6 20.8 10.6C17.92 10.6 15.6533 11.5333 14 13.4C12.3467 15.2667 11.52 17.8533 11.52 21.16V40.92ZM43.5656 43.48L70.7656 1.88H79.7256V42.6H85.9656V52.12H79.7256V61H69.0856V52.12H43.5656V43.48ZM69.0856 42.6V19.8L54.3656 42.6H69.0856Z" fill="#DFE5F0"/>
@@ -736,9 +736,9 @@ Template Name: главная
                         </form>
                     </div>
                         
-                    <img style="right: -15px;" class="parallax__img__first scale-100 absolute md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg]  md:z-0 z-0 wow fadeInRight"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower.svg'; ?>" alt="" >
-                    <img class="parallax__img__first scale-100 absolute md:top-20  top-auto md:bottom-auto bottom-0 -right-[0px] z-0 wow fadeInRight"  data-wow-delay="0.6s" src="<?php echo get_template_directory_uri() . '/src/img/main/car_catalog_1.webp'; ?>" alt="" >
-                    <img class="parallax__img__first scale-100 absolute md:top-56 top-auto md:bottom-auto -bottom-[40px] -right-[0px] z-10 wow fadeInRight"  data-wow-delay="0.6s" src="<?php echo get_template_directory_uri() . '/src/img/main/car_catalog_2.webp'; ?>" alt="" >
+                    <img style="right: -15px;" class="parallax__img__first scale-100 contact__img md:-top-20 top-auto md:bottom-auto -bottom-10  -rotate-[5deg]  md:z-0 z-0 wow fadeInRight"  data-wow-delay="0.1s" src="<?php echo get_template_directory_uri() . '/src/img/icons/flower.svg'; ?>" alt="" >
+                    <img class="parallax__img__first scale-100 contact__img md:top-20  top-auto md:bottom-auto bottom-0 -right-[0px] z-0 wow fadeInRight"  data-wow-delay="0.6s" src="<?php echo get_template_directory_uri() . '/src/img/main/car_catalog_1.webp'; ?>" alt="" >
+                    <img class="parallax__img__first scale-100 contact__img md:top-56 top-auto md:bottom-auto -bottom-[40px] -right-[0px] z-10 wow fadeInRight"  data-wow-delay="0.6s" src="<?php echo get_template_directory_uri() . '/src/img/main/car_catalog_2.webp'; ?>" alt="" >
                 </div>
             </section>
 
@@ -751,7 +751,7 @@ Template Name: главная
                                 <h2 class="text-black pb-10">Дорожим репутацией,<br> гордимся результатами </h2>
                             </div>
                         </div>
-                        <iframe src="https://swdgts.ru/55935bcb351676f98a0c58acffd978e7" width="100%" height="400" frameborder="0"></iframe> 
+                        <!-- <iframe src="https://swdgts.ru/55935bcb351676f98a0c58acffd978e7" width="100%" height="400" frameborder="0"></iframe>  -->
                             
                     </div>
             </section> 

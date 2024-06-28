@@ -77,13 +77,13 @@
                                             <a href="https://japanauto125.ru/?page_id=8">Все автомобили</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/?page_id=8?country=japan">Автомобили из Японии</a>
+                                            <a href="https://japanauto125.ru/?page_id=8&country=japan">Автомобили из Японии</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/?page_id=8/?country=korea">Автомобили из Кореи</a>
+                                            <a href="https://japanauto125.ru/?page_id=8&country=korea">Автомобили из Кореи</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
-                                            <a href="https://japanauto125.ru/?page_id=8/?country=china">Автомобили из Китая</a>
+                                            <a href="https://japanauto125.ru/?page_id=8&country=china">Автомобили из Китая</a>
                                         </li>  
                                         <li class="pb-8 font-bold text-gray text-base">
                                             <a href="https://japanauto125.ru/?page_id=10">Новости</a>
