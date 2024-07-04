@@ -30,9 +30,6 @@
                             <li class="opacity-60 text-bg-black">
                                 /
                             </li>
-                            <li class="breadcrumb__item">
-                                <span class="font-bold text-bg-black md:text-base text-sm">Аукцион, дилеры или вторичка? Где лучше купить авто</span>
-                            </li>
                         </ul>
                     </div>
                 </div>

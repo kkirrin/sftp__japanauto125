@@ -22,29 +22,36 @@ Template Name: главная
                                 <img style="width: -webkit-fill-available;" class="md:hidden sm:hidden block rounded-b-[30px] sm:max-h-[600px] object-cover max-h-screen" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_s_1.webp'; ?>" alt="bg-1">
                                 <div class="absolute md:top-40 top-20 md:left-40 left-0-0 md:w-2/3 w-full p-5">
                                     <h2>
-                                        Автомобили из Кореи <br>с доставкой в Уссурийск
+                                        Автомобили из Японии <br>с доставкой в Уссурийск
                                     </h2>
                                     
                                     <p class="md:text-[20px] text-[14px] text-white md:pt-10 pt-5 blue-circle-text font-semibold">
                                         Подберем автомобиль по вашему бюджету на аукционах Японии и доставим в любую точку России. Купите автомобиль мечты и сэкономьте до 50% по сравнению со вторичным рынком                                    
 
-                                        <ul class="gap-8 pt-10 two-columns counter-list">
-                                            <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
-                                                <span class="font-medium md:text-[50px] text-[30px] text-white counter-auto"></span><span class="md:text-base text-xs text-white"> Выкупленнных <br> автомобилей</span>
-                                            </div>
-                                            <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
-                                                <span class="font-medium md:text-[50px] text-[30px] text-white counter-days"></span> <span class="md:text-base text-xs text-white">Дней от договора <br>до вручения ключей</span>
+                                        <ul class="gap-8 pt-10 counter-list">
+                                            <div class="flex flex-row gap-10">
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white counter-auto"></span><span class="md:text-base text-xs text-white"> Выкупленнных <br> автомобилей в месяц</span>
+                                                </div>
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white counter-days"></span> <span class="md:text-base text-xs text-white">Дней от договора <br>до вручения ключей за несанкционированные авто</span>
+                                                </div>
+                                                <div style="max-width: 200px;" class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white counter-days_more">От </span>  <span class="md:text-base text-xs text-white">Дней выдача санкционных авто</span>
+                                                </div>           
                                             </div>
 
-                                            <div class="md:block hidden button__blue__to__dark__blue__to__gray text-center up">
-                                                <a href="#popup1" class="popup-link">
-                                                    Подобрать автомобиль
+                                            <div class="flex items-center gap-10" style="margin-top: 20px;">
+                                                <div class="md:block hidden button__blue__to__dark__blue__to__gray text-center up">
+                                                    <a href="#popup1" class="popup-link">
+                                                        Подобрать автомобиль
+                                                    </a>
+                                                </div>
+                                                
+                                                <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
+                                                    Перейти в каталог
                                                 </a>
                                             </div>
-                                            
-                                            <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
-                                                Перейти в каталог
-                                            </a>
                                             
                                             <div class="wrapper__button">
                                                 <div class="button__blue__to__dark__blue__to__gray text-center">
@@ -75,23 +82,30 @@ Template Name: главная
                                         Подберем автомобиль по вашему бюджету на Корейских площадках и доставим в любую точку России. Купите автомобиль мечты и сэкономьте до 50% по сравнению со вторичным рынком                                    </p>
                                     
 
-                                        <ul class="gap-8 pt-10 two-columns counter-list">
-                                            <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
-                                                <span class="font-medium md:text-[50px] text-[30px] text-white">689</span><span class="md:text-base text-xs text-white"> Выкупленнных <br> автомобилей</span>
-                                            </div>
-                                            <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
-                                                <span class="font-medium md:text-[50px] text-[30px] text-white">30</span> <span class="md:text-base text-xs text-white">Дней от договора <br>до вручения ключей</span>
+                                        <ul class="gap-8 pt-10 counter-list">
+                                            <div class="flex flex-row gap-10">
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white">300</span><span class="md:text-base text-xs text-white"> Выкупленнных <br> автомобилей в месяц</span>
+                                                </div>
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white">30</span> <span class="md:text-base text-xs text-white">Дней от договора <br>до вручения ключей за несанкционированные авто</span>
+                                                </div>
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white">90</span> <span class="md:text-base text-xs text-white">Дней <br> за санкционированные авто</span>
+                                                </div>
                                             </div>
 
-                                            <div class="md:block hidden button__blue__to__dark__blue__to__gray text-center up">
-                                                <a href="#popup1" class=" popup-link" id="popup">
-                                                    Подобрать автомобиль
+                                            <div class="flex items-center gap-10" style="margin-top: 20px;"> 
+                                                <div class="md:block hidden button__blue__to__dark__blue__to__gray text-center up">
+                                                    <a href="#popup1" class=" popup-link" id="popup">
+                                                        Подобрать автомобиль
+                                                    </a>
+                                                </div>
+                                            
+                                                <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
+                                                    Перейти в каталог
                                                 </a>
                                             </div>
-                                            
-                                            <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
-                                                Перейти в каталог
-                                            </a>
                                             
                                             <div class="wrapper__button">
                                                 <div class="button__blue__to__dark__blue__to__gray text-center">
@@ -123,23 +137,30 @@ Template Name: главная
                                     </p>
                                     
 
-                                        <ul class="gap-8 pt-10 two-columns counter-list">
-                                            <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
-                                                <span class="font-medium md:text-[50px] text-[30px] text-white">689</span><span class="md:text-base text-xs text-white"> Выкупленнных <br> автомобилей</span>
-                                            </div>
-                                            <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
-                                                <span class="font-medium md:text-[50px] text-[30px] text-white">30</span> <span class="md:text-base text-xs text-white">Дней от договора <br>до вручения ключей</span>
+                                    <ul class="gap-8 pt-10 counter-list">
+                                            <div class="flex flex-row gap-10">
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white">300</span><span class="md:text-base text-xs text-white"> Выкупленнных <br> автомобилей в месяц</span>
+                                                </div>
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white">30</span> <span class="md:text-base text-xs text-white">Дней от договора <br>до вручения ключей за несанкционированные авто</span>
+                                                </div>
+                                                <div class="blur-pattern flex justify-center gap-2 items-center md:flex-row flex-col">
+                                                    <span class="font-medium md:text-[50px] text-[30px] text-white">90</span> <span class="md:text-base text-xs text-white">Дней <br> за санкционированные авто</span>
+                                                </div>
                                             </div>
 
-                                            <div class="md:block hidden button__blue__to__dark__blue__to__gray text-center up">
-                                                <a href="#popup1" class=" popup-link" id="popup">
-                                                    Подобрать автомобиль
+                                            <div class="flex items-center gap-10" style="margin-top: 20px;"> 
+                                                <div class="md:block hidden button__blue__to__dark__blue__to__gray text-center up">
+                                                    <a href="#popup1" class=" popup-link" id="popup">
+                                                        Подобрать автомобиль
+                                                    </a>
+                                                </div>
+                                            
+                                                <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
+                                                    Перейти в каталог
                                                 </a>
                                             </div>
-                                            
-                                            <a href="https://japanauto125.ru/?page_id=8/" class="md:block hidden button__transparent__to__dark__blue__to__dark__blue up">
-                                                Перейти в каталог
-                                            </a>
                                             
                                             <div class="wrapper__button">
                                                 <div class="button__blue__to__dark__blue__to__gray text-center">
@@ -561,7 +582,7 @@ Template Name: главная
 
 
                         <ul class="flex flex-col md:gap-12 gap-3 animate md:pl-[0px] pl-[50px]">
-                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5 point">
+                            <li style="min-height: 132px; max-height: 162px;" class="border-light-gray rounded-[30px] border p-5 point">
                                 <div class="flex gap-6">
                                 <!-- <svg width="97.205566" height="60.253906" viewBox="0 0 97.0337 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <defs/>
@@ -583,7 +604,7 @@ Template Name: главная
                                 </div>
                                 
                             </li>
-                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5 point">
+                            <li style="min-height: 132px; max-height: 162px;" class="border-light-gray rounded-[30px] border p-5 point">
                                 <div class="flex gap-6">
                                     <!-- <svg class="h-[60px] w-[140px]" width="97.205566" height="60.253906" viewBox="0 0 97.2056 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <desc>
@@ -605,7 +626,7 @@ Template Name: главная
                                     </div>
                                 </div>
                             </li>
-                            <li style="min-height: 132px; max-height: 132px;" class="border-light-gray rounded-[30px] border p-5">
+                            <li style="min-height: 132px; max-height: 162px;" class="border-light-gray rounded-[30px] border p-5">
                                 <div class="flex gap-6">
                                     <!-- <svg class="h-[60px] w-[140px]" width="99.627441" height="60.253906" viewBox="0 0 99.6274 60.2539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <defs/>
@@ -619,7 +640,7 @@ Template Name: главная
                                             Депозит
                                         </p>
                                         <p class="font-normal text-gray md:text-base text-xs">
-                                            Вносите депозит в размере 50 000 рублей (входит в конечную стоимость авто)
+                                            Вносите депозит в размере 100 000 рублей (входит в конечную стоимость авто)
                                         </p>
                                     </div>
                                 </div>
@@ -716,7 +737,7 @@ Template Name: главная
 
                     <div class="md:w-2/3 w-full flex gap-3 flex-col md:pt-5 pt-2">
                         <p class="white-circle-text text-white font-semibold md:text-2xl text-base">И не только, также можем доставить спецтехнику под заказ</p>
-                        <p style="color: #9BA5B4;" class=" md:text-xl text-base opacity-10">
+                        <p class="text-white md:text-xl text-base opacity-10">
                             Оставьте свои контакты, наш специалист свяжется с вами и проконсультирует <br> по всем вопросам, если не хотите ждать <a href="#" class="font-bold text-white underline">напишите на WhatsApp </a>
                         </p>
                     </div>
@@ -731,7 +752,7 @@ Template Name: главная
                                 <button class="button__blue__to__dark__blue__to__gray w-full py-2 text-light rounded-lg up">Отправить</button>
                                 <p class="text-xs text-gray">* Нажимая кнопку “Отправить” вы даете согласие на обработку персональных данных *</p>
                             </div>
-
+                            <!-- <?php echo do_shortcode('[contact-form-7 id="cbd973b" title="Бяка"]'); ?> -->
                             
                         </form>
                     </div>
@@ -751,8 +772,7 @@ Template Name: главная
                                 <h2 class="text-black pb-10">Дорожим репутацией,<br> гордимся результатами </h2>
                             </div>
                         </div>
-                        <!-- <iframe src="https://swdgts.ru/55935bcb351676f98a0c58acffd978e7" width="100%" height="400" frameborder="0"></iframe>  -->
-                            
+                        <iframe src="https://swdgts.ru/55935bcb351676f98a0c58acffd978e7" width="100%" height="400" frameborder="0"></iframe> 
                     </div>
             </section> 
 

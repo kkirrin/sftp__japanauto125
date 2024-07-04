@@ -144,12 +144,13 @@
                     </div>
     
                     <div class="form-wrapper">
-                        <input class="form__input" placeholder="Введите имя" />
+                        <!-- <input class="form__input" placeholder="Введите имя" />
                         <input class="form__input" placeholder="Введите номер" />
                         
                         <button class="button bg-blue up button__blue__to__dark__blue__to__gray">
                             Заказать автомобиль
-                        </button>
+                        </button> -->
+                        <?php echo do_shortcode('[contact-form-7 id="aa52d7f" title="Форма подобрать авто"]'); ?>
     
                         <p class="text-gray text-sm text-start pt-7">
                             Нажимая кнопку "Заказать автомобиль" вы даете согласие на обработку персональных данных
@@ -174,12 +175,13 @@
                     </div>
     
                     <div class="form-wrapper">
-                        <input class="form__input" placeholder="Введите имя" />
+                        <!-- <input class="form__input" placeholder="Введите имя" />
                         <input class="form__input" placeholder="Введите номер" />
                         
                         <button class="button bg-blue up button__blue__to__dark__blue__to__gray">
                             Получить расчёт
-                        </button>
+                        </button> -->
+                        <?php echo do_shortcode('[contact-form-7 id="aa52d7f" title="Форма подобрать авто"]'); ?>
     
                         <p class="text-gray text-sm text-start pt-7">
                             Нажимая кнопку “Получить расчет” вы даете согласие на обработку персональных данных

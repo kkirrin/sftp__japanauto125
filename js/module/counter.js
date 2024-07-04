@@ -31,8 +31,9 @@ export const initCounterAnimation = () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                counterAnimation(document.querySelector('.counter-auto'), 600, 689);
+                counterAnimation(document.querySelector('.counter-auto'), 250, 300);
                 counterAnimation(document.querySelector('.counter-days'), 5, 30);
+                counterAnimation(document.querySelector('.counter-days_more'), 60, 90);
                 observer.unobserve(entry.target)
             }
         });
