@@ -14,7 +14,7 @@ Template Name: главная
          
             <section id="main" class="main-swiper md:max-h-full -z-10 md:-mt-[102px] -mt-[132px] w-full">
                 <div class="main-wrapper overflow-hidden container">
-                    <div class="main-item relative overflow-hidden mt-6">
+                    <div class="main-item relative overflow-hidden" style="margin-top: -0.5rem;">
                         <div class="swiper-wrapper">               
                             <div class="swiper-slide rounded-b-[30px] relative bg-black -z-10 max-h-screen">
                                 <img style="width: -webkit-fill-available;" class="parallax__img__first md:block hidden rounded-b-[30px] md:h-[840px] h-auto" src="<?php echo get_template_directory_uri() . '/src/img/main/bg_1.webp'; ?>" alt="bg-1">
@@ -304,7 +304,7 @@ Template Name: главная
                                                     echo '      <a href="'. get_the_permalink() .'"><img style="width: -webkit-fill-available; min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
-                                                    echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>;';
+                                                    echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>';
                                                     echo '              <div class="card__list">';
                                                     echo '               <ul>';
                                                     echo '                 <li class="pb-2">Год выпуска</li>';
@@ -320,11 +320,12 @@ Template Name: главная
                                                     echo '                <p class="py-2">*Точную стоимость авто уточняйте у менеджера</p>';
                                                     echo '                <div class="flex gap-2 justify-between items-center">';
                                                     echo '                  <a href="#popup2" class="bg-blue text-white py-2 px-16 rounded-lg popup-link hover:bg-dark-blue transition-all"> Заказать</a>';
-                                                    echo '              <svg class="next new__items__next" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                         <circle cx="25" cy="25" r="24" stroke="#467dd0" stroke-width="2"/>
-                                                                        <path d="M16 24H15V26H16V24ZM34.7071 25.7071C35.0976 25.3166 35.0976 24.6834 34.7071 24.2929L28.3431 17.9289C27.9526 17.5384 27.3195 17.5384 26.9289 17.9289C26.5384 18.3195 26.5384 18.9526 26.9289 19.3431L32.5858 25L26.9289 30.6569C26.5384 31.0474 26.5384 31.6805 26.9289 32.0711C27.3195 32.4616 27.9526 32.4616 28.3431 32.0711L34.7071 25.7071ZM16 26L34 26V24L16 24V26Z" fill="#467dd0"/>
-                                                                        </svg>';
-                                                    echo '          </div>';
+                                                    echo '                  <svg class="next new__items__next" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <circle cx="25" cy="25" r="24" stroke="#467dd0" stroke-width="2"/>
+                                                                                <path d="M16 24H15V26H16V24ZM34.7071 25.7071C35.0976 25.3166 35.0976 24.6834 34.7071 24.2929L28.3431 17.9289C27.9526 17.5384 27.3195 17.5384 26.9289 17.9289C26.5384 18.3195 26.5384 18.9526 26.9289 19.3431L32.5858 25L26.9289 30.6569C26.5384 31.0474 26.5384 31.6805 26.9289 32.0711C27.3195 32.4616 27.9526 32.4616 28.3431 32.0711L34.7071 25.7071ZM16 26L34 26V24L16 24V26Z" fill="#467dd0"/>
+                                                                            </svg>';
+                                                    echo '                </div>';
+                                                    echo '          </div>';                            
                                                     echo '      </div>';                            
                                                     
 
@@ -345,6 +346,7 @@ Template Name: главная
                                 <div class="popular-items-section">
                                     <div class="swiper popular-items-3">
                                         <div class="swiper-wrapper">
+                                            
                                             <?php
                                                 $my_posts = get_posts(array(
                                                     'numberposts' => 25,
@@ -361,12 +363,13 @@ Template Name: главная
                                                     'suppress_filters' => true
                                                 ));
 
+
                                                 foreach ($my_posts as $post) :                                
                                                     echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
                                                     echo '      <a href="'. get_the_permalink() .'"><img style="width: -webkit-fill-available;min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
                                                     echo '      </a> ';
                                                     echo '      <div class="p-5">';
-                                                    echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>;';
+                                                    echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>';
                                                     echo '              <div class="card__list">';
                                                     echo '               <ul>';
                                                     echo '                 <li class="pb-2">Год выпуска</li>';
@@ -884,39 +887,88 @@ Template Name: главная
 
                     <div class="flex md:max-h-10 max-h-[13.5rem] justify-between md:flex-row flex-col gap-10">
                         <ul class="grid md:grid-cols-2 grid-cols-1 gap-5">
-                            <li class="flex gap-2 items-center">
-                                <svg class="bg-light-gray rounded-full" width="18.000000" height="17.000000" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs/>
-                                    <path id="Vector" d="M12.55 10.9L12.1 11.35C12.1 11.35 11.01 12.43 8.06 9.49C5.1 6.55 6.19 5.48 6.19 5.48L6.47 5.19C7.18 4.49 7.25 3.36 6.63 2.54L5.37 0.85C4.61 -0.17 3.13 -0.3 2.26 0.57L0.69 2.13C0.25 2.56 -0.04 3.12 0 3.74C0.09 5.33 0.81 8.74 4.81 12.72C9.06 16.94 13.04 17.11 14.67 16.96C15.19 16.91 15.64 16.65 16 16.29L17.42 14.88C18.38 13.92 18.11 12.29 16.88 11.62L14.97 10.58C14.16 10.15 13.18 10.28 12.55 10.9Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                </svg>
-                                <a href="tel:+74232692080" class="text-base font-bold text-black" style="text-wrap: nowrap;">+7 (423) 269-20-80</a> 
-                            </li>
-                            <li class="flex gap-2 items-center">
-                                <svg class="bg-light-gray rounded-full" width="16.500000" height="22.000000" viewBox="0 0 16.5 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs/>
-                                    <path id="Vector" d="M8.25 0C3.69 0 0 3.69 0 8.25C0 10.04 0.58 11.69 1.56 13.03C1.58 13.07 1.58 13.1 1.6 13.13L7.1 21.38C7.36 21.77 7.79 22 8.25 22C8.7 22 9.13 21.77 9.39 21.38L14.89 13.13C14.91 13.1 14.91 13.07 14.93 13.03C15.91 11.69 16.5 10.04 16.5 8.25C16.5 3.69 12.8 0 8.25 0ZM8.25 11C6.73 11 5.5 9.76 5.5 8.25C5.5 6.73 6.73 5.5 8.25 5.5C9.76 5.5 11 6.73 11 8.25C11 9.76 9.76 11 8.25 11Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                </svg>
-                                
-                                    
-                                <article class="text-base font-semibold text-black">г.  Уссурийск, Тургенева 1-й переулок, 5</article> 
-                            </li>
-                            <li class="flex gap-2 items-center">
-                                <svg class="bg-light-gray rounded-full" width="21.000000" height="15.428223" viewBox="0 0 21 15.4282" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs/>
-                                    <path id="Vector" d="M18.08 0L2.91 0C1.3 0 0 1.3 0 2.91L0 12.51C0 14.12 1.3 15.42 2.91 15.42L18.08 15.42C19.69 15.42 21 14.12 21 12.51L21 2.91C21 1.3 19.69 0 18.08 0ZM7.3 10.4L3.22 13.89C2.93 14.13 2.5 14.1 2.25 13.81C2.01 13.52 2.04 13.09 2.33 12.84L6.41 9.36C6.7 9.12 7.13 9.15 7.38 9.44C7.62 9.73 7.59 10.16 7.3 10.4ZM10.5 9.08C9.95 9.08 9.42 8.9 9.01 8.54L9.01 8.54L9 8.54C9.01 8.54 9.01 8.54 9.01 8.54L2.74 3.1C2.45 2.85 2.42 2.42 2.67 2.14C2.92 1.85 3.35 1.82 3.64 2.07L9.91 7.51C10.04 7.62 10.26 7.71 10.5 7.71C10.73 7.71 10.95 7.63 11.09 7.5L11.09 7.5L17.35 2.07C17.64 1.82 18.07 1.85 18.32 2.14C18.57 2.42 18.54 2.85 18.25 3.1L11.98 8.54C11.57 8.9 11.04 9.08 10.5 9.08ZM18.74 13.81C18.49 14.1 18.06 14.13 17.77 13.89L13.69 10.4C13.4 10.16 13.37 9.73 13.61 9.44C13.86 9.15 14.29 9.12 14.58 9.36L18.66 12.84C18.95 13.09 18.98 13.52 18.74 13.81Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                </svg>
-                                <a href="mailto:japanauto_125@mail.ru" class="text-base font-semibold text-black">japanauto_125@mail.ru</a> 
-                            </li>
-                            <li class="flex gap-2 items-center">
-                                <svg width="21.000000" height="21.000000" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs/>
-                                    <path id="Vector" d="M12.11 10.87L14.8 12.43C15.07 12.58 15.15 12.93 15 13.18C14.85 13.45 14.52 13.54 14.25 13.39L11.51 11.81C11.23 12.02 10.88 12.15 10.5 12.15C9.58 12.15 8.84 11.41 8.84 10.5C8.84 9.77 9.3 9.16 9.94 8.93L9.94 3.87C9.94 3.56 10.2 3.31 10.5 3.31C10.8 3.31 11.05 3.57 11.05 3.87L11.05 8.93C11.69 9.16 12.15 9.77 12.15 10.5C12.15 10.63 12.14 10.75 12.11 10.87ZM10.5 21C16.29 21 21 16.29 21 10.5C21 4.7 16.29 0 10.5 0C4.7 0 0 4.7 0 10.5C0 16.29 4.7 21 10.5 21Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="evenodd"/>
-                                </svg>
-                                
-                                
-                                    
-                                <p class="text-base font-semibold text-black">Ежедневно <br><span class="text-gray">  с 08:00 до 20:00</span></p> 
-                            </li>
+
+                            <div>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                    <svg class="bg-light-gray rounded-full" width="16.500000" height="22.000000" viewBox="0 0 16.5 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M8.25 0C3.69 0 0 3.69 0 8.25C0 10.04 0.58 11.69 1.56 13.03C1.58 13.07 1.58 13.1 1.6 13.13L7.1 21.38C7.36 21.77 7.79 22 8.25 22C8.7 22 9.13 21.77 9.39 21.38L14.89 13.13C14.91 13.1 14.91 13.07 14.93 13.03C15.91 11.69 16.5 10.04 16.5 8.25C16.5 3.69 12.8 0 8.25 0ZM8.25 11C6.73 11 5.5 9.76 5.5 8.25C5.5 6.73 6.73 5.5 8.25 5.5C9.76 5.5 11 6.73 11 8.25C11 9.76 9.76 11 8.25 11Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>    
+                                    <article class="text-base font-semibold text-black">г.  Уссурийск, Тургенева 1-й переулок, 5 (Главный адрес)</article> 
+                                </li>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                    <svg class="bg-light-gray rounded-full" width="18.000000" height="17.000000" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M12.55 10.9L12.1 11.35C12.1 11.35 11.01 12.43 8.06 9.49C5.1 6.55 6.19 5.48 6.19 5.48L6.47 5.19C7.18 4.49 7.25 3.36 6.63 2.54L5.37 0.85C4.61 -0.17 3.13 -0.3 2.26 0.57L0.69 2.13C0.25 2.56 -0.04 3.12 0 3.74C0.09 5.33 0.81 8.74 4.81 12.72C9.06 16.94 13.04 17.11 14.67 16.96C15.19 16.91 15.64 16.65 16 16.29L17.42 14.88C18.38 13.92 18.11 12.29 16.88 11.62L14.97 10.58C14.16 10.15 13.18 10.28 12.55 10.9Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <a href="tel:+7924738855" class="text-base font-bold text-black" style="text-wrap: nowrap;">+7 (924) 738-85-55</a> 
+                                </li>
+                            </div>
+
+                            <div>
+                                 <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                     <svg class="bg-light-gray rounded-full" width="16.500000" height="22.000000" viewBox="0 0 16.5 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                         <defs/>
+                                         <path id="Vector" d="M8.25 0C3.69 0 0 3.69 0 8.25C0 10.04 0.58 11.69 1.56 13.03C1.58 13.07 1.58 13.1 1.6 13.13L7.1 21.38C7.36 21.77 7.79 22 8.25 22C8.7 22 9.13 21.77 9.39 21.38L14.89 13.13C14.91 13.1 14.91 13.07 14.93 13.03C15.91 11.69 16.5 10.04 16.5 8.25C16.5 3.69 12.8 0 8.25 0ZM8.25 11C6.73 11 5.5 9.76 5.5 8.25C5.5 6.73 6.73 5.5 8.25 5.5C9.76 5.5 11 6.73 11 8.25C11 9.76 9.76 11 8.25 11Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                     </svg>    
+                                     <article class="text-base font-semibold text-black">г.  Иркутск, ул. Свердлова 36, офис 465 (филиал)</article> 
+                                 </li>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                    <svg class="bg-light-gray rounded-full" width="18.000000" height="17.000000" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M12.55 10.9L12.1 11.35C12.1 11.35 11.01 12.43 8.06 9.49C5.1 6.55 6.19 5.48 6.19 5.48L6.47 5.19C7.18 4.49 7.25 3.36 6.63 2.54L5.37 0.85C4.61 -0.17 3.13 -0.3 2.26 0.57L0.69 2.13C0.25 2.56 -0.04 3.12 0 3.74C0.09 5.33 0.81 8.74 4.81 12.72C9.06 16.94 13.04 17.11 14.67 16.96C15.19 16.91 15.64 16.65 16 16.29L17.42 14.88C18.38 13.92 18.11 12.29 16.88 11.62L14.97 10.58C14.16 10.15 13.18 10.28 12.55 10.9Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <a href="tel:+79500518428" class="text-base font-bold text-black" style="text-wrap: nowrap;">+7 (950) 051-84-28 Евгений</a> 
+                                </li>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                    <svg class="bg-light-gray rounded-full" width="18.000000" height="17.000000" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M12.55 10.9L12.1 11.35C12.1 11.35 11.01 12.43 8.06 9.49C5.1 6.55 6.19 5.48 6.19 5.48L6.47 5.19C7.18 4.49 7.25 3.36 6.63 2.54L5.37 0.85C4.61 -0.17 3.13 -0.3 2.26 0.57L0.69 2.13C0.25 2.56 -0.04 3.12 0 3.74C0.09 5.33 0.81 8.74 4.81 12.72C9.06 16.94 13.04 17.11 14.67 16.96C15.19 16.91 15.64 16.65 16 16.29L17.42 14.88C18.38 13.92 18.11 12.29 16.88 11.62L14.97 10.58C14.16 10.15 13.18 10.28 12.55 10.9Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <a href="tel:+79148992992 " class="text-base font-bold text-black" style="text-wrap: nowrap;">+7 (914) 899-29-92 Александр</a> 
+                                </li>
+                            </div>
+
+                            <div>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                    <svg class="bg-light-gray rounded-full" width="16.500000" height="22.000000" viewBox="0 0 16.5 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M8.25 0C3.69 0 0 3.69 0 8.25C0 10.04 0.58 11.69 1.56 13.03C1.58 13.07 1.58 13.1 1.6 13.13L7.1 21.38C7.36 21.77 7.79 22 8.25 22C8.7 22 9.13 21.77 9.39 21.38L14.89 13.13C14.91 13.1 14.91 13.07 14.93 13.03C15.91 11.69 16.5 10.04 16.5 8.25C16.5 3.69 12.8 0 8.25 0ZM8.25 11C6.73 11 5.5 9.76 5.5 8.25C5.5 6.73 6.73 5.5 8.25 5.5C9.76 5.5 11 6.73 11 8.25C11 9.76 9.76 11 8.25 11Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>    
+                                    <article class="text-base font-semibold text-black">г. Краснодар ул проезд 3-й Звенигородский д. 41.
+                                    4 Этаж. (филиал)</article> 
+                                </li>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                    <svg class="bg-light-gray rounded-full" width="18.000000" height="17.000000" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M12.55 10.9L12.1 11.35C12.1 11.35 11.01 12.43 8.06 9.49C5.1 6.55 6.19 5.48 6.19 5.48L6.47 5.19C7.18 4.49 7.25 3.36 6.63 2.54L5.37 0.85C4.61 -0.17 3.13 -0.3 2.26 0.57L0.69 2.13C0.25 2.56 -0.04 3.12 0 3.74C0.09 5.33 0.81 8.74 4.81 12.72C9.06 16.94 13.04 17.11 14.67 16.96C15.19 16.91 15.64 16.65 16 16.29L17.42 14.88C18.38 13.92 18.11 12.29 16.88 11.62L14.97 10.58C14.16 10.15 13.18 10.28 12.55 10.9Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <a href="tel:+79530706389" class="text-base font-bold text-black" style="text-wrap: nowrap;">+7 (953) 070-63-89 Николай</a> 
+                                </li>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;"> 
+                                    <svg class="bg-light-gray rounded-full" width="18.000000" height="17.000000" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M12.55 10.9L12.1 11.35C12.1 11.35 11.01 12.43 8.06 9.49C5.1 6.55 6.19 5.48 6.19 5.48L6.47 5.19C7.18 4.49 7.25 3.36 6.63 2.54L5.37 0.85C4.61 -0.17 3.13 -0.3 2.26 0.57L0.69 2.13C0.25 2.56 -0.04 3.12 0 3.74C0.09 5.33 0.81 8.74 4.81 12.72C9.06 16.94 13.04 17.11 14.67 16.96C15.19 16.91 15.64 16.65 16 16.29L17.42 14.88C18.38 13.92 18.11 12.29 16.88 11.62L14.97 10.58C14.16 10.15 13.18 10.28 12.55 10.9Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <a href="tel:+79246545540" class="text-base font-bold text-black" style="text-wrap: nowrap;">+7 (924) 654-55-40 Николай</a> 
+                                </li>
+                            </div>
+                            <div>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                        <svg class="bg-light-gray rounded-full" width="21.000000" height="15.428223" viewBox="0 0 21 15.4282" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M18.08 0L2.91 0C1.3 0 0 1.3 0 2.91L0 12.51C0 14.12 1.3 15.42 2.91 15.42L18.08 15.42C19.69 15.42 21 14.12 21 12.51L21 2.91C21 1.3 19.69 0 18.08 0ZM7.3 10.4L3.22 13.89C2.93 14.13 2.5 14.1 2.25 13.81C2.01 13.52 2.04 13.09 2.33 12.84L6.41 9.36C6.7 9.12 7.13 9.15 7.38 9.44C7.62 9.73 7.59 10.16 7.3 10.4ZM10.5 9.08C9.95 9.08 9.42 8.9 9.01 8.54L9.01 8.54L9 8.54C9.01 8.54 9.01 8.54 9.01 8.54L2.74 3.1C2.45 2.85 2.42 2.42 2.67 2.14C2.92 1.85 3.35 1.82 3.64 2.07L9.91 7.51C10.04 7.62 10.26 7.71 10.5 7.71C10.73 7.71 10.95 7.63 11.09 7.5L11.09 7.5L17.35 2.07C17.64 1.82 18.07 1.85 18.32 2.14C18.57 2.42 18.54 2.85 18.25 3.1L11.98 8.54C11.57 8.9 11.04 9.08 10.5 9.08ZM18.74 13.81C18.49 14.1 18.06 14.13 17.77 13.89L13.69 10.4C13.4 10.16 13.37 9.73 13.61 9.44C13.86 9.15 14.29 9.12 14.58 9.36L18.66 12.84C18.95 13.09 18.98 13.52 18.74 13.81Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+                                    <a href="mailto:japanauto_125@mail.ru" class="text-base font-semibold text-black">japanauto_125@mail.ru</a> 
+                                </li>
+                                <li class="flex gap-2 items-center" style="padding-top: 10px;">
+                                    <svg width="21.000000" height="21.000000" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Vector" d="M12.11 10.87L14.8 12.43C15.07 12.58 15.15 12.93 15 13.18C14.85 13.45 14.52 13.54 14.25 13.39L11.51 11.81C11.23 12.02 10.88 12.15 10.5 12.15C9.58 12.15 8.84 11.41 8.84 10.5C8.84 9.77 9.3 9.16 9.94 8.93L9.94 3.87C9.94 3.56 10.2 3.31 10.5 3.31C10.8 3.31 11.05 3.57 11.05 3.87L11.05 8.93C11.69 9.16 12.15 9.77 12.15 10.5C12.15 10.63 12.14 10.75 12.11 10.87ZM10.5 21C16.29 21 21 16.29 21 10.5C21 4.7 16.29 0 10.5 0C4.7 0 0 4.7 0 10.5C0 16.29 4.7 21 10.5 21Z" fill="#467DD0" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <p class="text-base font-semibold text-black">Ежедневно <br><span class="text-gray">  с 08:00 до 20:00</span></p> 
+                                </li>
+                            </div>
                         </ul>
                         <ul class="flex gap-2">
                             <div class="w-max button__blue__to__dark__blue__to__gray text-sm p-2 up md:px-[40px] px-[10px]">
@@ -944,7 +996,7 @@ Template Name: главная
                         </ul>
                     </div>
 
-                    <div class="pt-20 w-full">
+                    <div style="padding-top: 375px;" class=" w-full">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37c2d7c946f9126e76a477e7ca815d42b6a8bd14b0bc56b5900f59c99e6aa228&amp;width=1440&amp;height=624&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                         

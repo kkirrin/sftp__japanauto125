@@ -148,7 +148,7 @@ export const initGeneralSlider3 = () => {
     const generalSlider = document.querySelector('.popular-items-3');
 
     if (generalSlider) {
-
+        console.log('S')
         const swiper = new Swiper(generalSlider, {
             slidesPerView: 2,
             spaceBetween: 15,

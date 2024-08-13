@@ -35,14 +35,26 @@
                     <div class="z-10">
                         <p class="pb-4 font-semibold">КОНТАКТЫ</p>
                         <ul>
+                            <li class="font-medium pb-5  md:pr-8 pr-auto md:text-start text-center start max-w-xs">
+                                <p class="font-medium md:text-[18px] text-[14px]">г.  Уссурийск, Тургенева 1-й переулок, 5</p>
+                            </li>
+                            <li class="font-medium pb-5  md:pr-8 pr-auto md:text-start text-center start max-w-xs">
+                                <p class="font-medium md:text-[18px] text-[14px]">г.  Уссурийск, Тургенева 1-й переулок, 5</p>
+                            </li>
+                            <li class="font-medium pb-5  md:pr-8 pr-auto md:text-start text-center start max-w-xs">
+                                <p class="font-medium md:text-[18px] text-[14px]">г. Иркутск, ул. Свердлова 36, офис 465</p>
+                            </li>
                             <li class="font-medium pb-5 md:pr-8 pr-auto md:text-start text-center start">
                                 <a class="font-medium md:text-[18px] text-[14px]" href="tel:+79247388555">+7 (924) 738‒85‒55</a>
                             </li>
                             <li class="font-medium pb-5 md:pr-8 pr-auto md:text-start text-center start">
-                                <a class="font-medium md:text-[18px] text-[14px]" href="mailto:japanauto_125@mail.ru">japanauto_125@mail.ru</a>
+                                <a class="font-medium md:text-[18px] text-[14px]" href="tel:+79500518428">+7 (950) 051-84-28 (Иркутск)</a>
                             </li>
-                            <li class="font-medium pb-5  md:pr-8 pr-auto md:text-start text-center start max-w-xs">
-                                <p class="font-medium md:text-[18px] text-[14px]">г.  Уссурийск, Тургенева 1-й переулок, 5</p>
+                            <li class="font-medium pb-5 md:pr-8 pr-auto md:text-start text-center start">
+                                <a class="font-medium md:text-[18px] text-[14px]"  href="tel:+79148992992">+7 (914) 899-29-92 (Иркутск)</a>
+                            </li>
+                            <li class="font-medium pb-5 md:pr-8 pr-auto md:text-start text-center start">
+                                <a class="font-medium md:text-[18px] text-[14px]" href="mailto:japanauto_125@mail.ru">japanauto_125@mail.ru</a>
                             </li>
                         </ul>
                     </div>  

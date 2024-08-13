@@ -18,7 +18,7 @@
             <div class="container md:gap-5 items-center justify-between flex md:pt-2">
                     <div class="relative w-full z-10 flex justify-center items-center gap-5">
                         <!-- Меню кнопка -->
-                        <div class="btn__menu md:flex hidden clip_box top left w-[180px] h-full">
+                        <div style="height: 75%;" class="btn__menu md:flex hidden clip_box top left w-[180px] ">
                             <div class="clip w-[180px] flex items-center">
                                 <div class="bg__btn flex items-center border border-blue rounded-xl p-2">
                                     <button class="flex items-center gap-2 bg-red pl-10 pr-2 py-1 rounded">
@@ -44,7 +44,9 @@
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=10">Новости</a></li>
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
 
-                                <li class="px-4 mb-4">г. Уссурийск, Тургенева 1-й переулок, 5</li>
+                                <li class="px-4 mb-4 font-bold text-black">г. Уссурийск, Тургенева 1-й переулок, 5</li>
+                                <li class="px-4 mb-4 font-bold text-black">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                <li class="px-4 mb-4 font-bold">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
                                
                             </ul>
                         </div>
@@ -92,7 +94,11 @@
                                             <a href="https://japanauto125.ru/?page_id=63">Образец договора</a>
                                         </li>  
                                         <a href="tel:+79247388555" class="text-black font-bold text-base pb-8">+7 (924) 738‒85‒55</a>
-                                        <li class="pb-8 font-bold text-black text-base"><p>г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
+                                        <div>
+                                            <li class="pb-8 font-bold text-black text-base"><p style="font-size: 14px;">г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
+                                            <li class="pb-8 font-bold text-black text-base"><p style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                            <li class="pb-8 font-bold text-black text-base"><p style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                        </div>
                                     </ul>
                                 </div>
                             </div>
@@ -107,8 +113,17 @@
                             </li>
                             <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/?page_id=8">Каталог</a></li>
                             <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
-                            <li class="mr-1"><p class="text-white">г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
-                            <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="tel:+79247388555">+7 (924) 738-85-55</a></li>
+                            <div>
+                                <li class="mr-1"><p class="text-white" style="font-size: 14px;">г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
+                                <li class="mr-1"><p class="text-white" style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                <li class="mr-1"><p class="text-white" style="font-size: 14px;">г. Краснодар ул проезд 3-й <br> Звенигородский д. 41.
+                                4 Этаж.</p></li>
+                            </div>
+                            <div>
+                                <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="tel:+79247388555">+7 (924) 738-85-55</a></li>
+                                <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="tel:+79500518428 ">+7 (950) 051-84-28  </a></li>
+                                <li class="mr-1"><a class="text-white hover:text-blue transition-all active:text-gray" href="tel:+79530706389 ">+7 (953) 070-63-89 </a></li>
+                            </div>
                         </ul>
 
                         <ul class="flex gap-4 md:hidden pt-5">

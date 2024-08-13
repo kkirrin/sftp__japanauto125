@@ -59,8 +59,16 @@
                                 </li>
                                 <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="https://japanauto125.ru/?page_id=8">Каталог</a></li>
                                 <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
-                                <li class="mr-1"><p class="text-black font-semibold">г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
-                                <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="tel:+79247388555">+7 (924) 738-85-55</a></li>
+                                <div>
+                                    <li class="mr-1"><p class="text-black font-semibold" style="font-size: 14px;">г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
+                                    <li class="mr-1"><p class="text-black font-semibold" style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                    <li class="mr-1"><p class="text-black font-semibold" style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                </div>
+                                <div>
+                                    <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="tel:+79247388555">+7 (924) 738-85-55</a></li>
+                                    <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="tel:+79500518428 ">+7 (950) 051-84-28  </a></li>
+                                    <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="tel:+79148992992  ">+7 (914) 899-29-92   </a></li>
+                                </div>
                             </ul>
                         </div>
 
@@ -97,7 +105,9 @@
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=8/?country=china">Автомобили из Китая</a></li>
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=10">Новости</a></li>
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
-                                <li class="px-4 mb-4">г. Уссурийск, Тургенева 1-й переулок, 5</li>
+                                <li class="px-4 mb-4 font-bold text-black">г. Уссурийск, Тургенева 1-й переулок, 5</li>
+                                <li class="px-4 mb-4 font-bold text-black">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                <li class="px-4 mb-4 font-bold">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
                             </ul>
 
                             </ul>
@@ -128,7 +138,11 @@
                                             <a href="https://japanauto125.ru/?page_id=63">Образец договора</a>
                                         </li>  
                                         <a href="tel:+79247388555" class="text-black font-bold text-base pb-8">+7 (924) 738‒85‒55</a>
-                                        <li class="pb-8 font-bold text-black text-base"><p>г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
+                                        <div>
+                                            <li class="pb-8 font-bold text-black text-base"><p style="font-size: 14px;">г. Уссурийск, Тургенева 1-й переулок, 5</p></li>
+                                            <li class="pb-8 font-bold text-black text-base"><p style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                            <li class="pb-8 font-bold text-black text-base"><p style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p></li>
+                                        </div>
                                     </ul>
                                 </div>
                             </div>
