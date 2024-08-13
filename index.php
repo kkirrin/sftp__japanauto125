@@ -278,7 +278,7 @@ Template Name: главная
                                 
                                 </div>
                             </div>
-                            <div id="order" class="_tabs-block"> 
+                            <div id="order" class="_tabs-block _active"> 
                                 <div class="popular-items-section">
                                     <div class="swiper popular-items-2">
                                         <div class="swiper-wrapper">
@@ -301,8 +301,7 @@ Template Name: главная
                                                 foreach ($my_posts as $post) :                                
                                                     echo '<div style="border-top-right-radius: 30px !important;" class="swiper-slide rounded-xl relative bg-light-gray">';
                                                     echo '  <p class=" clip_box top left text-white"><span class="clip bg-blue rounded-full py-2 px-6">'. get_field('status') .'</span></p>';
-                                                    echo '      <a href="'. get_the_permalink() .'"><img style="width: -webkit-fill-available; min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'';
-                                                    echo '      </a> ';
+                                                    echo '      <a href="'. get_the_permalink() .'"><img style="width: -webkit-fill-available; min-height: 320px !important; object-fit: cover !important; border-bottom-left-radius: 30px !important; border-top-right-radius: 30px !important; border-bottom-right-radius: 30px !important;" class="clip" src="'. get_the_post_thumbnail() .'</a>';
                                                     echo '      <div class="p-5">';
                                                     echo '          <p class="font-bold text-black py-4 text-[20px]">'. get_field('marka') .' '. get_field('model') .'</p>';
                                                     echo '              <div class="card__list">';
@@ -320,12 +319,11 @@ Template Name: главная
                                                     echo '                <p class="py-2">*Точную стоимость авто уточняйте у менеджера</p>';
                                                     echo '                <div class="flex gap-2 justify-between items-center">';
                                                     echo '                  <a href="#popup2" class="bg-blue text-white py-2 px-16 rounded-lg popup-link hover:bg-dark-blue transition-all"> Заказать</a>';
-                                                    echo '                  <svg class="next new__items__next" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                <circle cx="25" cy="25" r="24" stroke="#467dd0" stroke-width="2"/>
-                                                                                <path d="M16 24H15V26H16V24ZM34.7071 25.7071C35.0976 25.3166 35.0976 24.6834 34.7071 24.2929L28.3431 17.9289C27.9526 17.5384 27.3195 17.5384 26.9289 17.9289C26.5384 18.3195 26.5384 18.9526 26.9289 19.3431L32.5858 25L26.9289 30.6569C26.5384 31.0474 26.5384 31.6805 26.9289 32.0711C27.3195 32.4616 27.9526 32.4616 28.3431 32.0711L34.7071 25.7071ZM16 26L34 26V24L16 24V26Z" fill="#467dd0"/>
-                                                                            </svg>';
-                                                    echo '                </div>';
-                                                    echo '          </div>';                            
+                                                    echo '              <svg class="next new__items__next" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                         <circle cx="25" cy="25" r="24" stroke="#467dd0" stroke-width="2"/>
+                                                                        <path d="M16 24H15V26H16V24ZM34.7071 25.7071C35.0976 25.3166 35.0976 24.6834 34.7071 24.2929L28.3431 17.9289C27.9526 17.5384 27.3195 17.5384 26.9289 17.9289C26.5384 18.3195 26.5384 18.9526 26.9289 19.3431L32.5858 25L26.9289 30.6569C26.5384 31.0474 26.5384 31.6805 26.9289 32.0711C27.3195 32.4616 27.9526 32.4616 28.3431 32.0711L34.7071 25.7071ZM16 26L34 26V24L16 24V26Z" fill="#467dd0"/>
+                                                                        </svg>';
+                                                    echo '          </div>';
                                                     echo '      </div>';                            
                                                     
 
@@ -338,6 +336,8 @@ Template Name: главная
 
                                             <?php endforeach; ?>
                                             <?php wp_reset_postdata(); ?>
+
+                                            </div>
                                     </div>
                                 
                                 </div>
