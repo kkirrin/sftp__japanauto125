@@ -58,23 +58,22 @@
                                 </a>
                             </li>
                             <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="https://japanauto125.ru/?page_id=8">Каталог</a></li>
-                            <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
+                            <li class="mr-1" style="max-width: min-content;"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
                             <div>
                                 <li class="mr-1">
-                                    <p class="text-black font-semibold" style="font-size: 14px;">г. Уссурийск, Тургенева 1-й переулок, 5</p>
+                                    <p class="text-black font-semibold" style="font-size: 14px;"><?php echo get_field('address_header_1', 'option'); ?></p>
                                 </li>
                                 <li class="mr-1">
-                                    <p class="text-black font-semibold" style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p>
+                                    <p class="text-black font-semibold" style="font-size: 14px;"><?php echo get_field('address_header_2', 'option'); ?></p>
                                 </li>
                                 <li class="mr-1">
-                                    <p class="text-black font-semibold" style="font-size: 14px;">г. Краснодар ул проезд 3-й <br>
-                                        Звенигородский д. 41. 4 Этаж.</p>
+                                    <p class="text-black font-semibold" style="font-size: 14px;"><?php echo get_field('address_header_3', 'option'); ?></p>
                                 </li>
                             </div>
                             <div>
-                                <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="tel:+79247388555">+7 (924) 738-85-55</a></li>
-                                <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="tel:+79500518428 ">+7 (950) 051-84-28 </a></li>
-                                <li class="mr-1"><a class="text-black hover:text-blue transition-all active:text-gray font-semibold" href="tel:+79530706389 ">+7 (953) 070-63-89 </a></li>
+                                <li class="mr-1"><a class="font-bold text-black hover:text-blue transition-all active:text-gray" href="tel:+<?php echo get_field('phone__bot_header_1', 'option'); ?>"><?php echo get_field('phone_header_1', 'option'); ?></a></li>
+                                <li class="mr-1"><a class="font-bold text-black hover:text-blue transition-all active:text-gray" href="tel:+<?php echo get_field('phone__bot_header_2', 'option'); ?> "><?php echo get_field('phone_header_2', 'option'); ?></a></li>
+                                <li class="mr-1"><a class="font-bold text-black hover:text-blue transition-all active:text-gray" href="tel:+<?php echo get_field('phone__bot_header_3', 'option'); ?> "><?php echo get_field('phone_header_3', 'option'); ?></a></li>
                             </div>
                         </ul>
                     </div>
@@ -112,11 +111,9 @@
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=8/?country=china">Автомобили из Китая</a></li>
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=10">Новости</a></li>
                                 <li class="px-4 mb-4"><a href="https://japanauto125.ru/?page_id=63">Образец договора</a></li>
-                                <li class="px-4 mb-4 font-bold text-black">г. Уссурийск, Тургенева 1-й переулок, 5</li>
-                                <li class="px-4 mb-4 font-bold text-black">г. Иркутск, ул. Свердлова 36, офис 465</p>
-                                </li>
-                                <li class="px-4 mb-4 font-bold">г. Иркутск, ул. Свердлова 36, офис 465</p>
-                                </li>
+                                <li class="px-4 mb-4 font-bold text-black"><?php echo get_field('address_header_1', 'option'); ?></li>
+                                <li class="px-4 mb-4 font-bold text-black"><?php echo get_field('address_header_2', 'option'); ?></li>
+                                <li class="px-4 mb-4 font-bold text-black"><?php echo get_field('address_header_3', 'option'); ?></li>
                             </ul>
 
                         </ul>
@@ -149,13 +146,13 @@
                                     <a href="tel:+79247388555" class="text-black font-bold text-base pb-8">+7 (924) 738‒85‒55</a>
                                     <div>
                                         <li class="pb-8 font-bold text-black text-base">
-                                            <p style="font-size: 14px;">г. Уссурийск, Тургенева 1-й переулок, 5</p>
+                                            <p style="font-size: 14px;"><?php echo get_field('address_header_1', 'option'); ?></p>
                                         </li>
                                         <li class="pb-8 font-bold text-black text-base">
-                                            <p style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p>
+                                            <p style="font-size: 14px;"><?php echo get_field('address_header_2', 'option'); ?></p>
                                         </li>
                                         <li class="pb-8 font-bold text-black text-base">
-                                            <p style="font-size: 14px;">г. Иркутск, ул. Свердлова 36, офис 465</p>
+                                            <p style="font-size: 14px;"><?php echo get_field('address_header_3', 'option'); ?></p>
                                         </li>
                                     </div>
                                 </ul>

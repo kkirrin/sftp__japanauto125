@@ -279,10 +279,26 @@ function remove_default_menus()
     remove_menu_page('edit-comments.php');          // Комментарии
     remove_menu_page('themes.php');                 // Внешний вид
     // remove_menu_page('plugins.php');                // Плагины
-    remove_menu_page('users.php');                  // Пользователи
+    // remove_menu_page('users.php');                  // Пользователи
     remove_menu_page('tools.php');                  // Инструменты 
-    remove_menu_page('options-general.php');        // Настройки
+    // remove_menu_page('options-general.php');        // Настройки
     remove_menu_page('wpcf7');   // Contact form 7
     remove_menu_page('aiowpsec');   // wp security
     // remove_menu_page('edit.php?post_type=acf-field-group');   // ACF Field Group
+}
+
+
+
+
+if (function_exists('acf_add_options_page')) {
+
+    acf_add_options_page(
+        array(
+            'page_title' => 'Редактирование информации и телефонов',
+            'menu_title' => 'Контактная информация',
+            'menu_slug' => 'theme-general-settings',
+            'capability' => 'edit_posts',
+            'redirect' => false
+        )
+    );
 }
